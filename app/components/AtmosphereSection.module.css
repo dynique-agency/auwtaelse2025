@@ -1,0 +1,288 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 3rem;
+  background: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 0.875rem;
+  font-family: var(--font-serif);
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.58);
+  letter-spacing: 0.03em;
+  margin-bottom: 2.25rem;
+  font-family: var(--font-serif);
+}
+
+.description {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.85;
+  letter-spacing: 0.005em;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.photoItem {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  animation: none;
+}
+
+.section.visible .photoItem {
+  animation: fadeInUpPhoto 0.9s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.photoWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000000;
+}
+
+.photo {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.05s,
+              opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+  cursor: pointer;
+}
+
+.overlayIcon {
+  color: #ffffff;
+  transform: scale(0.8);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+}
+
+.photoItem:hover .photoOverlay {
+  opacity: 1;
+}
+
+.photoItem:hover .overlayIcon {
+  transform: scale(1);
+}
+
+.photoItem:hover .photo {
+  transform: scale(1.1);
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.followText {
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: var(--font-sans);
+}
+
+.socialButtons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1.125rem 2.25rem;
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--transition-medium) 0.05s;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-sans);
+}
+
+.socialButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  transition: left var(--transition-medium) 0.05s;
+  z-index: 0;
+}
+
+.socialButton:hover::before {
+  left: 0;
+}
+
+.socialButton:hover {
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.socialButton svg,
+.socialButton span {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.socialButton:hover svg {
+  transform: scale(1.1);
+}
+
+@keyframes fadeInUpPhoto {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .photoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .photoGrid {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .socialSection {
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .followText {
+    font-size: 1.1rem;
+  }
+
+  .socialButtons {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .socialButton {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .photoGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .photoItem {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+

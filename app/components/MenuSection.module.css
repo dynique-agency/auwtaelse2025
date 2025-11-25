@@ -1,0 +1,385 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 3rem;
+  background: #000000;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  position: relative;
+  font-family: var(--font-serif);
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.03em;
+  margin-top: 1rem;
+  font-family: var(--font-serif);
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.category {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 0;
+  overflow: hidden;
+  transition: all var(--transition-medium) 0.05s;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.category:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+.categoryHeader {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 2.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+.categoryHeader:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.categoryTitle {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s ease;
+  flex-shrink: 0;
+}
+
+.menuIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.4s ease 0.05s;
+}
+
+.categoryHeader.open .menuIcon {
+  transform: scale(1.1);
+}
+
+.categoryHeader:hover .menuIcon {
+  transform: scale(1.05);
+}
+
+.categoryNames {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.categoryName {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.categoryFrench {
+  font-size: 1.05rem;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.02em;
+  font-family: var(--font-serif);
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.6;
+}
+
+.categoryHeader.open .arrow {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.categoryContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-slow), opacity var(--transition-medium);
+  opacity: 0;
+}
+
+.categoryContent.expanded {
+  max-height: 2500px;
+  opacity: 1;
+}
+
+.itemsWrapper {
+  padding: 0 3rem 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.categoryDescription {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+  margin: 2rem 0 2.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.menuItem {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.3s ease 0.05s;
+  position: relative;
+}
+
+.menuItem:last-child {
+  border-bottom: none;
+}
+
+.menuItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  transition: width 0.3s ease 0.05s;
+}
+
+.menuItem:hover::before {
+  width: 100%;
+}
+
+.menuItem:hover {
+  padding-left: 1.5rem;
+}
+
+.dishName {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+  max-width: 70%;
+  position: relative;
+  z-index: 1;
+}
+
+.dots {
+  flex: 1;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.15) 0,
+    rgba(255, 255, 255, 0.15) 3px,
+    transparent 3px,
+    transparent 7px
+  );
+  margin-bottom: 0.5rem;
+  min-width: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.price {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .header {
+    margin-bottom: 4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .menuContainer {
+    gap: 1.5rem;
+  }
+
+  .categoryHeader {
+    padding: 2rem 1.5rem;
+  }
+
+  .categoryTitle {
+    gap: 1.25rem;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .categoryNames {
+    gap: 0.3rem;
+  }
+
+  .categoryName {
+    font-size: 1.3rem;
+  }
+
+  .categoryFrench {
+    font-size: 0.9rem;
+  }
+
+  .itemsWrapper {
+    padding: 0 1.5rem 2rem;
+  }
+
+  .categoryDescription {
+    margin: 1.5rem 0 2rem;
+    padding: 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .menuItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 1.25rem 0.75rem;
+  }
+
+  .menuItem:hover {
+    padding-left: 1rem;
+  }
+
+  .dishName {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  .price {
+    font-size: 1.05rem;
+    margin-top: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .categoryHeader {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .categoryTitle {
+    gap: 1rem;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .categoryName {
+    font-size: 1.15rem;
+  }
+
+  .categoryFrench {
+    font-size: 0.85rem;
+  }
+
+  .itemsWrapper {
+    padding: 0 1.25rem 1.75rem;
+  }
+}

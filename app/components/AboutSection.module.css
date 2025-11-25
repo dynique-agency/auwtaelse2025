@@ -1,0 +1,279 @@
+.section {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  background: #ffffff;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.imageContent {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s,
+              transform 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.section.visible .imageContent {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.05);
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s,
+              transform 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.section.visible .textContent {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 2rem;
+  line-height: 1.05;
+  font-family: var(--font-serif);
+}
+
+.quoteBlock {
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  border-left: 2px solid rgba(0, 0, 0, 0.15);
+  padding-left: 2rem;
+}
+
+.quote {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  font-family: var(--font-serif);
+  margin-bottom: 0.75rem;
+}
+
+.quoteAuthor {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.08em;
+  font-family: var(--font-sans);
+}
+
+.story {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.8;
+  letter-spacing: 0.005em;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-sans);
+}
+
+.intro {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.75;
+  letter-spacing: 0.005em;
+  font-family: var(--font-serif);
+}
+
+.divider {
+  width: 70px;
+  height: 1px;
+  background: #000000;
+  margin: 1.5rem 0;
+  opacity: 0.6;
+}
+
+.text {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.8;
+  letter-spacing: 0.005em;
+}
+
+.textItalic {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.7;
+  font-style: italic;
+  letter-spacing: 0.005em;
+}
+
+.closing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-top: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.bonAppetit {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000;
+  letter-spacing: 0.015em;
+  font-family: var(--font-serif);
+}
+
+.signature {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .imageContent {
+    order: 0;
+    height: 450px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 2rem;
+  }
+
+  .content {
+    gap: 2.5rem;
+  }
+
+  .textContent {
+    gap: 1.25rem;
+  }
+
+  .imageContent {
+    height: 350px;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .quoteBlock {
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem 0 1.25rem 1.25rem;
+  }
+
+  .quote {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .quoteAuthor {
+    font-size: 0.9rem;
+  }
+
+  .story {
+    font-size: 1.05rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+  }
+
+  .text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .quote {
+    font-size: 1.15rem;
+  }
+
+  .quoteBlock {
+    padding-left: 1rem;
+  }
+
+  .story {
+    font-size: 1rem;
+  }
+
+  .imageContent {
+    height: 300px;
+  }
+}

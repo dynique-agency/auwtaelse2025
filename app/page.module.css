@@ -1,0 +1,17 @@
+.main {
+  min-height: 100vh;
+  position: relative;
+}
+
+.heroWrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.sectionsWrapper {
+  position: relative;
+  z-index: 10;
+  background: transparent;
+}
+

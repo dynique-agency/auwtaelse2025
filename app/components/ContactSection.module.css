@@ -1,0 +1,290 @@
+.section {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  background: #000000;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.05;
+  margin: 0;
+  font-family: var(--font-serif);
+}
+
+.subtitle {
+  font-size: 1.45rem;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.58);
+  letter-spacing: 0.03em;
+  margin-top: -0.5rem;
+  font-family: var(--font-serif);
+}
+
+.intro {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.75;
+  letter-spacing: 0.005em;
+  max-width: 520px;
+}
+
+.contactMethods {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.method {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.methodLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.phoneNumbers {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.phoneSeparator {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 300;
+}
+
+.contactLink {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity var(--transition-fast) 0.05s, transform var(--transition-fast) 0.05s;
+  letter-spacing: 0.015em;
+  display: inline-block;
+  font-family: var(--font-sans);
+}
+
+.contactLink:hover {
+  opacity: 0.75;
+  transform: translateX(2px);
+}
+
+.contactLink:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 4px;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-top: 1rem;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.infoLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.25rem;
+}
+
+.infoText {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.infoTextSmall {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.25rem;
+}
+
+.extrasSection {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.extrasGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.extraCard {
+  text-align: center;
+  padding: 2.25rem 1.75rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-medium) 0.05s;
+}
+
+.extraCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.extraIcon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.extraCard:hover .extraIcon {
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+}
+
+.extraTitle {
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-bottom: 0.875rem;
+  font-family: var(--font-sans);
+}
+
+.extraDescription {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.7;
+  letter-spacing: 0.005em;
+}
+
+@media (max-width: 968px) {
+  .mainContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .rightSide {
+    padding-top: 0;
+  }
+
+  .extrasGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .contactLink {
+    font-size: 1.15rem;
+  }
+
+  .phoneNumbers {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .phoneSeparator {
+    display: none;
+  }
+
+  .extrasSection {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+  }
+
+  .extraCard {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .contactLink {
+    font-size: 1.1rem;
+  }
+}
