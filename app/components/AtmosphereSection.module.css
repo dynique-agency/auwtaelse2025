@@ -282,7 +282,13 @@
 
   .photoItem {
     max-width: 400px;
+    width: 100%;
+    min-height: 300px;
     margin: 0 auto;
+  }
+
+  .photoWrapper {
+    min-height: 300px;
   }
 }
 
