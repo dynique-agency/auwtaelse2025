@@ -99,17 +99,10 @@
 }
 
 .extraCard {
-  display: flex;
-  flex-direction: column;
   background: #000000;
-  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
   cursor: pointer;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  position: relative;
   overflow: hidden;
 }
 
@@ -124,21 +117,18 @@
 }
 
 .cardHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 2.5rem 2rem;
-  gap: 1.25rem;
-  position: relative;
+  text-align: center;
 }
 
 .extraIcon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 60px;
   height: 60px;
   color: #ffffff;
+  margin: 0 auto 1.25rem;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
 }
 
@@ -164,21 +154,19 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0;
+  margin: 0 auto 0.5rem;
   font-family: var(--font-sans);
-  text-align: center;
   transition: color 0.3s ease 0.05s;
-  padding: 0 1rem;
-  width: 100%;
+  display: block;
 }
 
 .expandIcon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   color: rgba(255, 255, 255, 0.5);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
-  margin-top: 0.5rem;
+  margin: 0.5rem auto 0;
 }
 
 .extraCard:hover .expandIcon {
@@ -198,6 +186,7 @@
               opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   padding: 0 2rem;
+  text-align: center;
 }
 
 .extraCard.open .extraContent {
@@ -212,9 +201,8 @@
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.8;
   letter-spacing: 0.01em;
-  margin: 0 0 1.5rem 0;
+  margin: 0 auto 1.5rem;
   font-family: var(--font-sans);
-  text-align: center;
 }
 
 .contactPrompt {
@@ -280,18 +268,6 @@
     gap: 1.5rem;
   }
 
-  .cardHeader {
-    padding: 2rem 1.5rem;
-  }
-
-  .extraTitle {
-    padding: 0 1rem;
-  }
-
-  .extraCard.open .extraContent {
-    padding: 0 1.5rem 2rem;
-  }
-
   .infoContactButtons {
     flex-direction: column;
     gap: 0.75rem;
@@ -330,22 +306,21 @@
   }
 
   .cardHeader {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
 
   .extraTitle {
-    padding: 0 0.5rem;
     font-size: 0.9rem;
   }
 
   .extraCard.open .extraContent {
-    padding: 0 1rem 2rem;
+    padding: 0 1.5rem 2rem;
   }
 }
 
 @media (max-width: 480px) {
   .section {
-    padding: 3rem 1rem;
+    padding: 3rem 1.5rem;
   }
 
   .title {
@@ -361,7 +336,7 @@
   }
 
   .cardHeader {
-    padding: 1.75rem 0.75rem;
+    padding: 2rem 1rem;
   }
 
   .extraIcon {
@@ -371,19 +346,14 @@
 
   .extraTitle {
     font-size: 0.85rem;
-    padding: 0 0.5rem;
   }
 
   .extraDescription {
     font-size: 0.9rem;
   }
 
-  .expandIcon {
-    margin-top: 0.25rem;
-  }
-
   .extraCard.open .extraContent {
-    padding: 0 0.75rem 1.75rem;
+    padding: 0 1rem 2rem;
   }
 }
 
