@@ -168,7 +168,7 @@
   font-family: var(--font-sans);
   text-align: center;
   transition: color 0.3s ease 0.05s;
-  padding: 0 2rem;
+  width: 100%;
 }
 
 .expandIcon {
@@ -281,10 +281,6 @@
 
   .cardHeader {
     padding: 2rem 1.5rem;
-  }
-
-  .extraTitle {
-    padding: 0 1rem;
   }
 
   .extraCard.open .extraContent {
