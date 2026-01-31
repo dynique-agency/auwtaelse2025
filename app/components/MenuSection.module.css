@@ -105,18 +105,20 @@
 }
 
 .menuIcon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  transition: transform 0.4s ease 0.05s;
+  width: 44px;
+  height: 44px;
+  color: #ffffff;
+  transition: all 0.4s ease 0.05s;
 }
 
 .categoryHeader.open .menuIcon {
-  transform: scale(1.1);
+  transform: scale(1.15) rotate(5deg);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .categoryHeader:hover .menuIcon {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .categoryNames {

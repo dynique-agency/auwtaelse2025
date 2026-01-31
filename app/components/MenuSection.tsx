@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
 import styles from './MenuSection.module.css'
 
 interface MenuSectionProps {
@@ -162,33 +161,65 @@ export default function MenuSection({ language }: MenuSectionProps) {
     switch (iconType) {
       case 'soup':
         return (
-          <Image
-            src="/voorgerecht.png"
-            alt="Voorgerecht"
-            width={40}
-            height={40}
-            className={styles.menuIcon}
-          />
+          <svg 
+            className={styles.menuIcon} 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="1.5" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+          >
+            {/* Elegant soup bowl with steam */}
+            <path d="M20 12.5c-.6 0-1-.4-1-1s.4-1 1-1h1v-1c0-1.5-1-3-2.5-3.5"/>
+            <path d="M3.5 6C2 6.5 1 8 1 9.5v1h1c.6 0 1 .4 1 1s-.4 1-1 1"/>
+            <path d="M5 19h14c1.1 0 2-.9 2-2v-4c0-2.8-2.2-5-5-5H8C5.2 8 3 10.2 3 13v4c0 1.1.9 2 2 2z"/>
+            <path d="M8 5c.5-.8.5-1.5.5-2"/>
+            <path d="M12 5c.5-.8.5-1.5.5-2"/>
+            <path d="M16 5c.5-.8.5-1.5.5-2"/>
+          </svg>
         )
       case 'main':
         return (
-          <Image
-            src="/hoofdgerecht.png"
-            alt="Hoofdgerecht"
-            width={40}
-            height={40}
-            className={styles.menuIcon}
-          />
+          <svg 
+            className={styles.menuIcon} 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="1.5" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+          >
+            {/* Restaurant cloche (dome) */}
+            <path d="M5 12h14"/>
+            <path d="M12 12V7"/>
+            <path d="M8 7.5c0-1.5 1-2.5 2-3"/>
+            <path d="M16 7.5c0-1.5-1-2.5-2-3"/>
+            <ellipse cx="12" cy="12" rx="9" ry="5"/>
+            <path d="M3 12v1c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-1"/>
+            <rect x="6" y="15" width="12" height="2" rx="1"/>
+          </svg>
         )
       case 'dessert':
         return (
-          <Image
-            src="/desert.png"
-            alt="Dessert"
-            width={40}
-            height={40}
-            className={styles.menuIcon}
-          />
+          <svg 
+            className={styles.menuIcon} 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="1.5" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+          >
+            {/* Elegant ice cream/dessert coupe */}
+            <path d="M12 3c3.5 0 6 2 6 4.5 0 1.5-1 2.5-2 3.5-1 1-1.5 2-1.5 3.5v1"/>
+            <path d="M12 3c-3.5 0-6 2-6 4.5 0 1.5 1 2.5 2 3.5 1 1 1.5 2 1.5 3.5v1"/>
+            <path d="M9.5 15.5h5"/>
+            <circle cx="12" cy="5.5" r="0.5" fill="currentColor"/>
+            <path d="M8 15.5c0 2.2 1.8 4 4 4s4-1.8 4-4"/>
+            <path d="M10 19.5c0 1.1.9 2 2 2s2-.9 2-2"/>
+            <line x1="12" y1="19.5" x2="12" y2="21"/>
+          </svg>
         )
       default:
         return null
