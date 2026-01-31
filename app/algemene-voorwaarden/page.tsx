@@ -70,8 +70,7 @@ export default function Terms() {
           <h2 className={styles.heading}>6. Allergenen en dieetwensen</h2>
           <p className={styles.text}>
             Wij doen ons uiterste best om rekening te houden met allergieën en dieetwensen. Geef dit bij uw 
-            reservering door. Hoewel wij zorgvuldig te werk gaan, kunnen wij niet garanderen dat onze gerechten 
-            volledig vrij zijn van allergenen door mogelijke kruisbesmetting in de keuken.
+            reservering door zodat wij hiermee rekening kunnen houden.
           </p>
         </section>
 

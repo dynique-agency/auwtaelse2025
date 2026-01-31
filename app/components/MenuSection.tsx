@@ -41,7 +41,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
     nl: {
       title: 'Menu',
       subtitle: 'Nos Spécialités',
-      allergenenDisclaimer: 'Voor allergenen en dieetwensen kunt u contact met ons opnemen. Wij doen ons best rekening te houden met uw wensen, maar kunnen kruisbesmetting in de keuken niet volledig uitsluiten.',
+      allergenenDisclaimer: 'Voor allergenen en dieetwensen kunt u contact met ons opnemen. Wij doen ons best rekening te houden met uw wensen.',
       categories: [
         {
           id: 'voorgerechten',
@@ -100,7 +100,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
     en: {
       title: 'Menu',
       subtitle: 'Nos Spécialités',
-      allergenenDisclaimer: 'For allergens and dietary requirements, please contact us. We do our best to accommodate your needs, but cannot completely exclude cross-contamination in the kitchen.',
+      allergenenDisclaimer: 'For allergens and dietary requirements, please contact us. We do our best to accommodate your needs.',
       categories: [
         {
           id: 'starters',
