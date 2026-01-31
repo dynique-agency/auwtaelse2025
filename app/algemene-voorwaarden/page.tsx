@@ -10,7 +10,7 @@ export default function Terms() {
     <main className={styles.page}>
       <div className={styles.container}>
         <h1 className={styles.title}>Algemene Voorwaarden</h1>
-        <p className={styles.subtitle}>Laatst bijgewerkt: November 2025</p>
+        <p className={styles.subtitle}>Laatst bijgewerkt: Januari 2026</p>
 
         <section className={styles.section}>
           <h2 className={styles.heading}>1. Algemeen</h2>
@@ -30,6 +30,11 @@ export default function Terms() {
             Bij annulering van een reservering verzoeken wij u dit minimaal 24 uur van tevoren door te geven. 
             Bij annulering op de dag zelf of bij niet verschijnen (no-show) behouden wij ons het recht voor om 
             kosten in rekening te brengen.
+          </p>
+          <p className={styles.text}>
+            <strong>No-show beleid:</strong> Bij niet verschijnen zonder afmelding kunnen wij kosten in rekening brengen 
+            tot maximaal €25,- per persoon voor groepsreserveringen (8+ personen). Voor reguliere reserveringen behouden 
+            wij ons het recht voor om u uit te sluiten van toekomstige reserveringen.
           </p>
         </section>
 
@@ -95,18 +100,38 @@ export default function Terms() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.heading}>10. Wijzigingen</h2>
+          <h2 className={styles.heading}>10. Klachten</h2>
           <p className={styles.text}>
-            Auwt Aelse behoudt zich het recht voor om deze algemene voorwaarden te wijzigen. De meest recente 
-            versie is altijd te vinden op onze website.
+            Mocht u onverhoopt niet tevreden zijn over onze dienstverlening, dan horen wij dit graag zo spoedig mogelijk. 
+            U kunt uw klacht kenbaar maken bij ons personeel of per e-mail naar <a href="mailto:info@auwtaelse.nl" className={styles.externalLink}>info@auwtaelse.nl</a>.
+          </p>
+          <p className={styles.text}>
+            Wij streven ernaar om klachten binnen 14 dagen af te handelen. Mocht u niet tevreden zijn met onze afhandeling, 
+            dan kunt u zich wenden tot de Geschillencommissie Horeca, onderdeel van de Stichting Geschillencommissies 
+            voor Consumentenzaken (SGC).
+          </p>
+          <p className={styles.text}>
+            <strong>Geschillencommissie Horeca</strong><br />
+            Postbus 90600<br />
+            2509 LP Den Haag<br />
+            Website: <a href="https://www.degeschillencommissie.nl" target="_blank" rel="noopener noreferrer" className={styles.externalLink}>www.degeschillencommissie.nl</a>
           </p>
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.heading}>11. Toepasselijk recht</h2>
+          <h2 className={styles.heading}>11. Wijzigingen</h2>
           <p className={styles.text}>
-            Op deze algemene voorwaarden is Nederlands recht van toepassing. Geschillen zullen worden voorgelegd 
-            aan de bevoegde rechter in Nederland.
+            Auwt Aelse behoudt zich het recht voor om deze algemene voorwaarden te wijzigen. De meest recente 
+            versie is altijd te vinden op onze website. Wijzigingen worden van kracht op het moment van publicatie.
+          </p>
+        </section>
+
+        <section className={styles.section}>
+          <h2 className={styles.heading}>12. Toepasselijk recht</h2>
+          <p className={styles.text}>
+            Op deze algemene voorwaarden is Nederlands recht van toepassing. Geschillen zullen in eerste instantie 
+            worden voorgelegd aan de Geschillencommissie Horeca. Indien dit niet tot een oplossing leidt, zijn de 
+            geschillen onderworpen aan de bevoegde rechter in het arrondissement Limburg.
           </p>
         </section>
 

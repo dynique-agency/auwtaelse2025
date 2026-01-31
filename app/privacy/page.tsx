@@ -10,7 +10,7 @@ export default function Privacy() {
     <main className={styles.page}>
       <div className={styles.container}>
         <h1 className={styles.title}>Privacyverklaring</h1>
-        <p className={styles.subtitle}>Laatst bijgewerkt: November 2025</p>
+        <p className={styles.subtitle}>Laatst bijgewerkt: Januari 2026</p>
 
         <section className={styles.section}>
           <h2 className={styles.heading}>1. Algemeen</h2>
@@ -57,6 +57,10 @@ export default function Privacy() {
             <li>U te informeren over wijzigingen van onze diensten</li>
             <li>Om u de mogelijkheid te bieden een account aan te maken indien van toepassing</li>
           </ul>
+          <p className={styles.text}>
+            <strong>Grondslag verwerking (Art. 6 AVG):</strong> De verwerking van uw persoonsgegevens is noodzakelijk 
+            voor de uitvoering van de overeenkomst (reservering) tussen u en Auwt Aelse.
+          </p>
         </section>
 
         <section className={styles.section}>
@@ -87,25 +91,55 @@ export default function Privacy() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.heading}>8. Gegevens inzien, aanpassen of verwijderen</h2>
+          <h2 className={styles.heading}>8. Uw rechten onder de AVG</h2>
           <p className={styles.text}>
-            U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen. Daarnaast heeft 
-            u het recht om uw eventuele toestemming voor de gegevensverwerking in te trekken of bezwaar te maken 
-            tegen de verwerking van uw persoonsgegevens door Auwt Aelse en heeft u het recht op gegevensoverdraagbaarheid.
+            U heeft de volgende rechten met betrekking tot uw persoonsgegevens:
           </p>
+          <ul className={styles.list}>
+            <li><strong>Recht op inzage:</strong> U kunt opvragen welke gegevens wij van u hebben</li>
+            <li><strong>Recht op rectificatie:</strong> U kunt vragen om correctie van onjuiste gegevens</li>
+            <li><strong>Recht op verwijdering:</strong> U kunt vragen om verwijdering van uw gegevens</li>
+            <li><strong>Recht op beperking:</strong> U kunt vragen om beperking van de verwerking</li>
+            <li><strong>Recht op bezwaar:</strong> U kunt bezwaar maken tegen de verwerking</li>
+            <li><strong>Recht op dataportabiliteit:</strong> U kunt uw gegevens in een gestructureerd formaat opvragen</li>
+            <li><strong>Recht om toestemming in te trekken:</strong> Als verwerking op toestemming is gebaseerd</li>
+          </ul>
           <p className={styles.text}>
-            U kunt een verzoek tot inzage, correctie, verwijdering, gegevensoverdraging van uw persoonsgegevens of 
-            verzoek tot intrekking van uw toestemming of bezwaar op de verwerking van uw persoonsgegevens sturen 
-            naar info@auwtaelse.nl.
+            Om deze rechten uit te oefenen, kunt u contact opnemen via <a href="mailto:info@auwtaelse.nl" className={styles.externalLink}>info@auwtaelse.nl</a>. 
+            Wij reageren binnen 1 maand op uw verzoek.
           </p>
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.heading}>9. Beveiliging</h2>
+          <h2 className={styles.heading}>9. Klacht indienen</h2>
+          <p className={styles.text}>
+            Als u vindt dat Auwt Aelse niet goed omgaat met uw persoonsgegevens, kunt u contact met ons opnemen. 
+            U heeft ook het recht om een klacht in te dienen bij de Autoriteit Persoonsgegevens (AP).
+          </p>
+          <p className={styles.text}>
+            <strong>Autoriteit Persoonsgegevens</strong><br />
+            Postbus 93374<br />
+            2509 AJ Den Haag<br />
+            Telefoon: <a href="tel:0882001500" className={styles.externalLink}>088 200 1500</a><br />
+            Website: <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener noreferrer" className={styles.externalLink}>autoriteitpersoonsgegevens.nl</a>
+          </p>
+        </section>
+
+        <section className={styles.section}>
+          <h2 className={styles.heading}>10. Beveiliging</h2>
           <p className={styles.text}>
             Auwt Aelse neemt de bescherming van uw gegevens serieus en neemt passende maatregelen om misbruik, 
             verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan.
           </p>
+          <p className={styles.text}>
+            <strong>Beveiligingsmaatregelen:</strong>
+          </p>
+          <ul className={styles.list}>
+            <li>HTTPS versleuteling voor alle communicatie</li>
+            <li>Veilige opslag van reserveringsgegevens</li>
+            <li>Toegangsbeperking tot persoonsgegevens</li>
+            <li>Regelmatige security updates</li>
+          </ul>
         </section>
 
         <div className={styles.backLink}>

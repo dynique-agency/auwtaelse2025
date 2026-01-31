@@ -41,6 +41,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
     nl: {
       title: 'Menu',
       subtitle: 'Nos Spécialités',
+      allergenenDisclaimer: 'Voor allergenen en dieetwensen kunt u contact met ons opnemen. Wij doen ons best rekening te houden met uw wensen, maar kunnen kruisbesmetting in de keuken niet volledig uitsluiten.',
       categories: [
         {
           id: 'voorgerechten',
@@ -99,6 +100,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
     en: {
       title: 'Menu',
       subtitle: 'Nos Spécialités',
+      allergenenDisclaimer: 'For allergens and dietary requirements, please contact us. We do our best to accommodate your needs, but cannot completely exclude cross-contamination in the kitchen.',
       categories: [
         {
           id: 'starters',
@@ -195,6 +197,8 @@ export default function MenuSection({ language }: MenuSectionProps) {
     }
   }
 
+  const currentContent = menuData[language]
+
   return (
     <section 
       ref={sectionRef}
@@ -203,12 +207,12 @@ export default function MenuSection({ language }: MenuSectionProps) {
     >
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>{content.title}</h2>
-          <p className={styles.subtitle}>{content.subtitle}</p>
+          <h2 className={styles.title}>{currentContent.title}</h2>
+          <p className={styles.subtitle}>{currentContent.subtitle}</p>
         </div>
         
         <div className={styles.menuContainer}>
-          {content.categories.map((category, index) => (
+          {currentContent.categories.map((category, index) => (
             <div key={category.id} className={styles.category}>
               <button
                 className={`${styles.categoryHeader} ${openCategory === category.id ? styles.open : ''}`}
@@ -263,6 +267,10 @@ export default function MenuSection({ language }: MenuSectionProps) {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className={styles.disclaimer}>
+          <p className={styles.disclaimerText}>{currentContent.allergenenDisclaimer}</p>
         </div>
       </div>
     </section>

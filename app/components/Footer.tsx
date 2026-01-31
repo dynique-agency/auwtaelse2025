@@ -65,6 +65,8 @@ export default function Footer() {
           <div className={styles.legal}>
             <a href="/privacy" className={styles.legalLink}>Privacyverklaring</a>
             <span className={styles.legalSeparator}>•</span>
+            <a href="/cookies" className={styles.legalLink}>Cookiebeleid</a>
+            <span className={styles.legalSeparator}>•</span>
             <a href="/algemene-voorwaarden" className={styles.legalLink}>Algemene Voorwaarden</a>
           </div>
           

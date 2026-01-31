@@ -11,6 +11,7 @@ import ContactSection from './components/ContactSection'
 import InfoSection from './components/InfoSection'
 import Footer from './components/Footer'
 import FloatingReserveButton from './components/FloatingReserveButton'
+import CookieBanner from './components/CookieBanner'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -72,6 +73,7 @@ export default function Home() {
           <Footer />
         </div>
         <FloatingReserveButton language={language} />
+        <CookieBanner />
       </main>
     </>
   )

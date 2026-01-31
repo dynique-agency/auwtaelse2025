@@ -384,3 +384,31 @@
     padding: 0 1.25rem 1.75rem;
   }
 }
+
+.disclaimer {
+  max-width: 800px;
+  margin: 4rem auto 0;
+  padding: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+.disclaimerText {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+  .disclaimer {
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .disclaimerText {
+    font-size: 0.8rem;
+  }
+}
