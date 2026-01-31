@@ -1,0 +1,361 @@
+.section {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 4rem;
+  background: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 1.05;
+  margin: 0 0 0.75rem 0;
+  font-family: var(--font-serif);
+}
+
+.subtitle {
+  font-size: 1.45rem;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.03em;
+  font-family: var(--font-serif);
+}
+
+.mainInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease 0.05s, box-shadow 0.3s ease 0.05s;
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.infoLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 0.5rem 0;
+  font-family: var(--font-sans);
+}
+
+.infoText {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+.infoTextSmall {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+.extrasGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.extraCard {
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.extraCard:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.extraCard.open {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.extraIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+}
+
+.extraCard:hover .extraIcon {
+  transform: scale(1.08);
+}
+
+.extraCard.open .extraIcon {
+  transform: scale(1.1);
+}
+
+.petsImage {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+  filter: brightness(0) invert(1);
+}
+
+.extraTitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  font-family: var(--font-sans);
+  text-align: center;
+  transition: color 0.3s ease 0.05s;
+  padding: 0 2rem;
+}
+
+.expandIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+  margin-top: 0.5rem;
+}
+
+.extraCard:hover .expandIcon {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.extraCard.open .expandIcon {
+  transform: rotate(180deg);
+  color: #ffffff;
+}
+
+.extraContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              padding 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  padding: 0 2rem;
+}
+
+.extraCard.open .extraContent {
+  max-height: 500px;
+  opacity: 1;
+  padding: 0 2rem 2.5rem;
+}
+
+.extraDescription {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem 0;
+  font-family: var(--font-sans);
+  text-align: center;
+}
+
+.contactPrompt {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  margin: 0 0 1.25rem 0;
+  font-family: var(--font-sans);
+  letter-spacing: 0.02em;
+}
+
+.infoContactButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.infoContactButton {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.875rem 1.75rem;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--transition-medium) 0.05s;
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+.infoContactButton:hover {
+  background: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+.infoContactButton svg {
+  transition: transform 0.3s ease 0.05s;
+}
+
+.infoContactButton:hover svg {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .mainInfo {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .extrasGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cardHeader {
+    padding: 2rem 1.5rem;
+  }
+
+  .extraTitle {
+    padding: 0 1rem;
+  }
+
+  .extraCard.open .extraContent {
+    padding: 0 1.5rem 2rem;
+  }
+
+  .infoContactButtons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .infoContactButton {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 2rem;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .mainInfo {
+    margin-bottom: 3rem;
+  }
+
+  .infoCard {
+    padding: 1.5rem;
+  }
+
+  .extraCard {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .infoText {
+    font-size: 0.95rem;
+  }
+
+  .extraTitle {
+    font-size: 1rem;
+  }
+
+  .extraDescription {
+    font-size: 0.9rem;
+  }
+}
+

@@ -76,11 +76,9 @@ export default function AboutSection({ language }: AboutSectionProps) {
             
             <p className={styles.intro}>{text.intro}</p>
             
-            <div className={styles.divider}></div>
-
             <p className={styles.text}>{text.opening}</p>
             <p className={styles.text}>{text.events}</p>
-            <p className={styles.textItalic}>{text.info}</p>
+            <p className={styles.text}>{text.info}</p>
 
             <div className={styles.closing}>
               <p className={styles.bonAppetit}>{text.closing}</p>

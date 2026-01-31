@@ -8,7 +8,9 @@ import AboutSection from './components/AboutSection'
 import MenuSection from './components/MenuSection'
 import AtmosphereSection from './components/AtmosphereSection'
 import ContactSection from './components/ContactSection'
+import InfoSection from './components/InfoSection'
 import Footer from './components/Footer'
+import FloatingReserveButton from './components/FloatingReserveButton'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -20,7 +22,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const sections = ['over-ons', 'menu', 'sfeerimpressie', 'reserveren']
+    const sections = ['over-ons', 'menu', 'sfeerimpressie', 'reserveren', 'algemene-informatie']
     
     const observer = new IntersectionObserver(
       (entries) => {
@@ -66,8 +68,10 @@ export default function Home() {
           <MenuSection language={language} />
           <AtmosphereSection language={language} />
           <ContactSection language={language} />
+          <InfoSection language={language} />
           <Footer />
         </div>
+        <FloatingReserveButton language={language} />
       </main>
     </>
   )

@@ -47,12 +47,14 @@ export default function Header({ language, onLanguageToggle, activeSection }: He
       { label: 'Menu', href: '#menu' },
       { label: 'Sfeerimpressie', href: '#sfeerimpressie' },
       { label: 'Reserveren', href: '#reserveren' },
+      { label: 'Algemene Informatie', href: '#algemene-informatie' },
     ],
     en: [
       { label: 'About Us', href: '#over-ons' },
       { label: 'Menu', href: '#menu' },
       { label: 'Atmosphere', href: '#sfeerimpressie' },
       { label: 'Reserve', href: '#reserveren' },
+      { label: 'General Info', href: '#algemene-informatie' },
     ],
   }
 
@@ -60,12 +62,12 @@ export default function Header({ language, onLanguageToggle, activeSection }: He
     <>
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
         <div className={styles.headerContainer}>
-          <a href="#" className={styles.logoLink}>
+          <a href="#" className={styles.logoLink} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Image
               src="/logo.svg"
               alt="Auwt Aelse"
-              width={80}
-              height={47}
+              width={150}
+              height={89}
               className={styles.headerLogo}
               priority
             />

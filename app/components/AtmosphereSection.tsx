@@ -77,7 +77,7 @@ export default function AtmosphereSection({ language }: AtmosphereSectionProps) 
             <div 
               key={photo.id} 
               className={styles.photoItem}
-              style={{ animationDelay: `${index * 0.1}s` }}
+              style={{ animationDelay: `${index * 0.08}s` }}
             >
               <div className={styles.photoWrapper}>
                 <Image

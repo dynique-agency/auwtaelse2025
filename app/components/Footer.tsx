@@ -26,40 +26,12 @@ export default function Footer() {
               <li><a href="#menu" className={styles.link}>Menu</a></li>
               <li><a href="#sfeerimpressie" className={styles.link}>Sfeerimpressie</a></li>
               <li><a href="#reserveren" className={styles.link}>Reserveren</a></li>
+              <li><a href="#algemene-informatie" className={styles.link}>Algemene Informatie</a></li>
             </ul>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Contact</h3>
-            <ul className={styles.contactList}>
-              <li className={styles.contactItem}>
-                <span className={styles.contactLabel}>Adres</span>
-                <span className={styles.contactValue}>Dorpstraat 6</span>
-                <span className={styles.contactValue}>6181 GX Elsloo</span>
-              </li>
-              <li className={styles.contactItem}>
-                <span className={styles.contactLabel}>Telefoon</span>
-                <a href="tel:0464377442" className={styles.contactLink}>046 437 7442</a>
-                <a href="tel:0612176780" className={styles.contactLink}>06 1217 6780</a>
-              </li>
-              <li className={styles.contactItem}>
-                <span className={styles.contactLabel}>Email</span>
-                <a href="mailto:info@auwtaelse.nl" className={styles.contactLink}>info@auwtaelse.nl</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Openingstijden</h3>
-            <ul className={styles.hoursList}>
-              <li className={styles.hoursItem}>
-                <span className={styles.hoursDay}>Donderdag - Zondag</span>
-                <span className={styles.hoursTime}>vanaf 17.30u</span>
-              </li>
-              <li className={styles.hoursNote}>
-                Laatste bestelling: 21.00u
-              </li>
-            </ul>
+            <h3 className={styles.columnTitle}>Volg Ons</h3>
             <div className={styles.social}>
               <a 
                 href="https://www.instagram.com/auwtaelse" 
