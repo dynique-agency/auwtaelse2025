@@ -107,7 +107,7 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
   cursor: pointer;
   padding: 0;
-  text-align: left;
+  text-align: center;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -168,6 +168,7 @@
   font-family: var(--font-sans);
   text-align: center;
   transition: color 0.3s ease 0.05s;
+  padding: 0 1rem;
   width: 100%;
 }
 
@@ -283,6 +284,10 @@
     padding: 2rem 1.5rem;
   }
 
+  .extraTitle {
+    padding: 0 1rem;
+  }
+
   .extraCard.open .extraContent {
     padding: 0 1.5rem 2rem;
   }
@@ -324,14 +329,23 @@
     padding: 1.5rem;
   }
 
-  .extraCard {
-    padding: 2rem 1.5rem;
+  .cardHeader {
+    padding: 2rem 1rem;
+  }
+
+  .extraTitle {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .extraCard.open .extraContent {
+    padding: 0 1rem 2rem;
   }
 }
 
 @media (max-width: 480px) {
   .section {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem;
   }
 
   .title {
@@ -346,12 +360,30 @@
     font-size: 0.95rem;
   }
 
+  .cardHeader {
+    padding: 1.75rem 0.75rem;
+  }
+
+  .extraIcon {
+    width: 56px;
+    height: 56px;
+  }
+
   .extraTitle {
-    font-size: 1rem;
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
   }
 
   .extraDescription {
     font-size: 0.9rem;
+  }
+
+  .expandIcon {
+    margin-top: 0.25rem;
+  }
+
+  .extraCard.open .extraContent {
+    padding: 0 0.75rem 1.75rem;
   }
 }
 
