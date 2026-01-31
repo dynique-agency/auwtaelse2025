@@ -654,8 +654,8 @@ kruisbesmetting in de keuken niet volledig uitsluiten."
 
 ---
 
-**Gemaakt door:** Cursor AI Assistant  
-**Disclaimer:** Dit rapport is informatief. Voor juridisch bindend advies raadpleeg een gespecialiseerde advocaat.  
-**Voor:** Auwt Aelse Restaurant  
-**Datum:** 31 januari 2026
+**Website:** Auwt Aelse Restaurant  
+**Datum:** 31 januari 2026  
+**Webdesign:** Dynique Digital Agency  
+**Disclaimer:** Dit rapport is informatief. Voor juridisch bindend advies raadpleeg een gespecialiseerde advocaat.
 

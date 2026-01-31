@@ -8,12 +8,10 @@ export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Minimum loading time voor animatie
     const timer = setTimeout(() => {
       setIsLoading(false)
     }, 2000)
 
-    // Check if page is fully loaded
     const handleLoad = () => {
       setTimeout(() => {
         setIsLoading(false)

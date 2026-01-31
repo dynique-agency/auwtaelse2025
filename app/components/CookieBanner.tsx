@@ -8,11 +8,9 @@ export default function CookieBanner() {
   const [isClosing, setIsClosing] = useState(false)
 
   useEffect(() => {
-    // Check if user has already accepted cookies
     const hasAccepted = localStorage.getItem('cookieConsent')
     
     if (!hasAccepted) {
-      // Show banner after 1 second for better UX
       const timer = setTimeout(() => {
         setIsVisible(true)
       }, 1000)

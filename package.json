@@ -1,7 +1,9 @@
 {
-  "name": "restaurant-webapp",
-  "version": "0.1.0",
+  "name": "auwtaelse-website",
+  "version": "1.0.0",
   "private": true,
+  "description": "Officiële website van Bistro Auwt Aelse",
+  "author": "Dynique Digital Agency",
   "scripts": {
     "dev": "next dev -p 1836",
     "build": "next build",

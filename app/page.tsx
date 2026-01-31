@@ -27,7 +27,6 @@ export default function Home() {
     
     const observer = new IntersectionObserver(
       (entries) => {
-        // Find the most visible section
         let maxRatio = 0
         let mostVisible = ''
         

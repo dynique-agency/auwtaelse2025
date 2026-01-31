@@ -958,7 +958,7 @@ lighthouse https://auwtaelse.nl --view
 
 ---
 
-**Gemaakt door:** Cursor AI Assistant  
-**Voor:** Auwt Aelse Restaurant  
-**Datum:** 31 januari 2026
+**Website:** Auwt Aelse Restaurant  
+**Datum:** 31 januari 2026  
+**Webdesign:** Dynique Digital Agency
 
