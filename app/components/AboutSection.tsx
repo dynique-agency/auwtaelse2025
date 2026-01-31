@@ -66,7 +66,9 @@ export default function AboutSection({ language }: AboutSectionProps) {
                 alt="Auwt Aelse Restaurant"
                 fill
                 className={styles.image}
-                quality={95}
+                quality={85}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>

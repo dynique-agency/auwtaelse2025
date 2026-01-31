@@ -17,7 +17,8 @@ export default function Hero({ language }: HeroProps) {
           fill
           priority
           className={styles.backgroundImage}
-          quality={100}
+          quality={85}
+          sizes="100vw"
         />
         <div className={styles.overlay} />
       </div>

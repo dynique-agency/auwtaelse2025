@@ -85,7 +85,9 @@ export default function AtmosphereSection({ language }: AtmosphereSectionProps) 
                   alt={photo.alt}
                   fill
                   className={styles.photo}
-                  quality={90}
+                  quality={80}
+                  loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <div className={styles.photoOverlay}>
                   <div className={styles.overlayIcon}>

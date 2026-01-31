@@ -1,0 +1,5 @@
+Contact: mailto:info@auwtaelse.nl
+Expires: 2027-01-31T23:59:59.000Z
+Preferred-Languages: nl, en
+Canonical: https://auwtaelse.nl/.well-known/security.txt
+

@@ -15,6 +15,7 @@ export default function Footer() {
               width={120}
               height={70}
               className={styles.logo}
+              loading="lazy"
             />
             <p className={styles.tagline}>Bistro depuis 2025</p>
           </div>

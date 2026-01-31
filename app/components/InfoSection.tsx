@@ -184,6 +184,7 @@ export default function InfoSection({ language }: InfoSectionProps) {
                       width={44}
                       height={44}
                       className={styles.petsImage}
+                      loading="lazy"
                     />
                   )}
                 </div>

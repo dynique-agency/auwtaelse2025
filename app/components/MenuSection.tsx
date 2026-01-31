@@ -170,6 +170,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
             width={50}
             height={50}
             className={styles.menuIcon}
+            loading="lazy"
           />
         )
       case 'main':
@@ -180,6 +181,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
             width={50}
             height={50}
             className={styles.menuIcon}
+            loading="lazy"
           />
         )
       case 'dessert':
@@ -190,6 +192,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
             width={50}
             height={50}
             className={styles.menuIcon}
+            loading="lazy"
           />
         )
       default:
