@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
           
           <div className={styles.business}>
-            <p className={styles.businessInfo}>KVK: 70182151 • BTW: NL70182151B01</p>
+            <p className={styles.businessInfo}>KVK: 95700854 • BTW: NL005169554B40</p>
           </div>
 
           <p className={styles.copyright}>© {new Date().getFullYear()} Auwt Aelse Bistro. Tous droits réservés.</p>

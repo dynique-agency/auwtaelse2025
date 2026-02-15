@@ -12,7 +12,7 @@
 
 ### **Prioriteit 1: Hero Images (KRITIEK)**
 ```
-img1.png              6.2 MB → 400 KB  (hero background)
+img1.png              6.2 MB → 400 KB   (hero background)
 frontofrestaurant.png 5.8 MB → 400 KB  (about section)
 ```
 **Impact:** -12 MB, +3s sneller op mobile

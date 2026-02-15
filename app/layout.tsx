@@ -28,7 +28,7 @@ export default function RootLayout({
     "legalName": "V.O.F. Brasserie Auwt Aelse",
     "description": "Bistro Auwt Aelse - Een mix van moeders keuken en de méditerranée. Verfijnde Franse gerechten in een intieme setting.",
     "image": "https://auwtaelse.nl/frontofrestaurant.png",
-    "taxID": "NL70182151B01",
+    "taxID": "NL005169554B40",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Dorpstraat 6",
