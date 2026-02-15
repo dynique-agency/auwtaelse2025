@@ -33,7 +33,7 @@ export default function AtmosphereSection({ language }: AtmosphereSectionProps) 
     nl: {
       title: 'Sfeerimpressie',
       subtitle: 'L\'Ambiance',
-      description: 'Ervaar de warme en intieme sfeer van onze bistro. Van gezellige avonden met kaarslicht tot het bruisende terras bij zonnig weer.',
+      description: 'Lekker Limburgs met een vleugje Frankrijk.',
       follow: 'Volg ons',
       instagram: 'Instagram',
       facebook: 'Facebook'
@@ -41,7 +41,7 @@ export default function AtmosphereSection({ language }: AtmosphereSectionProps) 
     en: {
       title: 'Atmosphere',
       subtitle: 'L\'Ambiance',
-      description: 'Experience the warm and intimate atmosphere of our bistro. From cozy candlelit evenings to the vibrant terrace on sunny days.',
+      description: 'Delicious Limburg cuisine with a touch of France.',
       follow: 'Follow us',
       instagram: 'Instagram',
       facebook: 'Facebook'
