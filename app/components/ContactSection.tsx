@@ -32,7 +32,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
     nl: {
       title: 'Reserveren',
       subtitle: 'Réservation',
-      intro: 'Voor een reservering kunt u ons bellen of mailen. Wij zorgen ervoor dat uw avond perfect wordt.',
+      intro: 'Voor een reservering of meer informatie kun je ons bellen of mailen. Of loop gezellig een binnen.',
       phone: {
         label: 'Bellen',
         number: '046 437 7442'
@@ -45,7 +45,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
     en: {
       title: 'Reservations',
       subtitle: 'Réservation',
-      intro: 'For a reservation, you can call or email us. We will ensure your evening is perfect.',
+      intro: 'For a reservation or more information, you can call or email us. Or feel free to drop by.',
       phone: {
         label: 'Call',
         number: '046 437 7442'
