@@ -47,38 +47,57 @@ export default function MenuSection({ language }: MenuSectionProps) {
           id: 'voorgerechten',
           name: 'Voorgerechten',
           french: 'les entrées',
-          description: '',
+          description: 'Onze kaart bestaat uit eenvoudige, huisgemaakte gerechten. Dagvers bereid, dus op = op!',
           icon: 'soup',
           items: [
-            { gerecht: "Champignonsoep met een vleugje truffel", prijs: "€9,50" },
-            { gerecht: "Unnesop gegratineerd", prijs: "€9,50" },
-            { gerecht: "Champignons à l'escargot", prijs: "€9,50" },
-            { gerecht: "Camembert au four", prijs: "€11,50" },
-            { gerecht: "Truffeltraktatie", prijs: "€12,50" },
-            { gerecht: "Combi van Caprese", prijs: "€12,50" },
-            { gerecht: "Garnaaltjes in knoflookboter", prijs: "€10,50" },
-            { gerecht: "Sardinefilets uit de oven", prijs: "€11,50" },
-            { gerecht: "Gambakroketjes met kleine salade", prijs: "€11,50" },
-            { gerecht: "Cuisses de grenouille", prijs: "€12,50" },
-            { gerecht: "Carpaccio van rund", prijs: "€12,50" },
-            { gerecht: "Trio van wild", prijs: "€15,50" }
+            { gerecht: "soupe du jour", prijs: "€ 8,50" },
+            { gerecht: "unnesop gegratineerd", prijs: "€ 9,50" },
+            { gerecht: "champignons à l'escargot (zonder slakken)", prijs: "€ 9,50" },
+            { gerecht: "camembert au four", prijs: "€ 11,50" },
+            { gerecht: "carpaccio van rode biet met feta en walnoot*", prijs: "€ 12,50" },
+            { gerecht: "garnaaltjes in knoflookboter", prijs: "€ 10,50" },
+            { gerecht: "sardinefilets uit de oven", prijs: "€ 11,50" },
+            { gerecht: "gambakroketjes met kleine salade", prijs: "€ 11,50" },
+            { gerecht: "cuisses de grenouille (indien voorradig)*", prijs: "€ 12,50" },
+            { gerecht: "carpaccio van rund*", prijs: "€ 12,50" }
+          ]
+        },
+        {
+          id: 'menu-selection',
+          name: 'Menu de Sélection',
+          french: '3-gangen menu',
+          description: '3-gangen (voor-, hoofd- en nagerecht). Kies uit al het lekkers op onze kaart! Voor de gerechten met * rekenen wij € 2,50 supplement.',
+          icon: 'main',
+          items: [
+            { gerecht: "Menu de Sélection per persoon", prijs: "€ 35,50" }
           ]
         },
         {
           id: 'hoofdgerechten',
           name: 'Hoofdgerechten',
           french: 'les plats principaux',
-          description: 'Gerechten worden geserveerd met verse groenten van het seizoen en aardappelen naar keuze',
+          description: 'De hoofdgerechten worden geserveerd met salade en frietjes. Sauzen: rode wijn / peper / champignonroom',
           icon: 'main',
           items: [
-            { gerecht: "Ravioli (wisselend assortiment)", prijs: "€19,50" },
-            { gerecht: "Vispannetje met kreeftsaus", prijs: "€19,50" },
-            { gerecht: "Schnitzel met champignonroomsaus (ook vega mogelijk)", prijs: "€19,50" },
-            { gerecht: "Spareribs à la Harrie", prijs: "€20,75" },
-            { gerecht: "Biefstuk (180gr) met rode wijn- of pepersaus", prijs: "€21,50" },
-            { gerecht: "Wildstoof van ree", prijs: "€21,50" },
-            { gerecht: "Terre & Mer (biefstuk & garnaaltjes)", prijs: "€23,50" },
-            { gerecht: "Hertenbief (180gr) met rode wijnsaus", prijs: "€26,50" }
+            { gerecht: "ravioli (vega - wisselend assortiment)", prijs: "€ 19,50" },
+            { gerecht: "vispannetje met kreeftsaus", prijs: "€ 19,50" },
+            { gerecht: "schnitzel (ook vega mogelijk) met saus naar keuze", prijs: "€ 19,50" },
+            { gerecht: "spareribs à la Harrie", prijs: "€ 20,75" },
+            { gerecht: "biefstuk (180gr.) met saus naar keuze*", prijs: "€ 21,50" },
+            { gerecht: "boeuf bourguignon", prijs: "€ 19,50" },
+            { gerecht: "terre & mer (biefstuk & garnaaltjes) met saus naar keuze*", prijs: "€ 23,50" }
+          ]
+        },
+        {
+          id: 'kinderen',
+          name: 'Pour les Petits',
+          french: 'voor de kinderen',
+          description: '',
+          icon: 'dessert',
+          items: [
+            { gerecht: "frietjes met frikandel of kipnuggets", prijs: "€ 10,00" },
+            { gerecht: "halve portie van iets lekkers uit de kaart", prijs: "1/2 prijs" },
+            { gerecht: "kinderijsje", prijs: "€ 5,00" }
           ]
         },
         {
@@ -88,11 +107,11 @@ export default function MenuSection({ language }: MenuSectionProps) {
           description: '',
           icon: 'dessert',
           items: [
-            { gerecht: "Koffie/thee compleet met lekkers en likeurtje", prijs: "€8,00" },
-            { gerecht: "Vanille-ijs met advocaat of chocolade-saus", prijs: "€9,50" },
-            { gerecht: "Crème brûlée", prijs: "€9,50" },
-            { gerecht: "Coupe Werm Keesje", prijs: "€11,50" },
-            { gerecht: "Kaasplankje", prijs: "€12,50" }
+            { gerecht: "koffie/thee compleet met lekkers en likeurtje", prijs: "€ 8,50" },
+            { gerecht: "affogato (vanille-ijs overgoten met espresso)", prijs: "€ 7,50" },
+            { gerecht: "vanille-ijs met advocaat- of chocoladesaus", prijs: "€ 9,50" },
+            { gerecht: "crème brûlée", prijs: "€ 9,50" },
+            { gerecht: "kaasplankje*", prijs: "€ 12,50" }
           ]
         }
       ]
@@ -106,38 +125,57 @@ export default function MenuSection({ language }: MenuSectionProps) {
           id: 'starters',
           name: 'Starters',
           french: 'les entrées',
-          description: '',
+          description: 'Our menu consists of simple, homemade dishes. Freshly prepared daily, so when it\'s gone, it\'s gone!',
           icon: 'soup',
           items: [
-            { dish: "Mushroom soup with a touch of truffle", price: "€9,50" },
-            { dish: "Onion soup au gratin", price: "€9,50" },
-            { dish: "Mushrooms prepared escargot-style", price: "€9,50" },
-            { dish: "Baked Camembert", price: "€11,50" },
-            { dish: "Truffle treat", price: "€12,50" },
-            { dish: "Caprese combination", price: "€12,50" },
-            { dish: "Small shrimps in garlic butter", price: "€10,50" },
-            { dish: "Oven-baked sardine fillets", price: "€11,50" },
-            { dish: "Prawn croquettes with a small salad", price: "€11,50" },
-            { dish: "Frog legs (Cuisses de grenouille)", price: "€12,50" },
-            { dish: "Beef carpaccio", price: "€12,50" },
-            { dish: "Trio of game", price: "€15,50" }
+            { dish: "soupe du jour", price: "€ 8.50" },
+            { dish: "french onion soup gratinated", price: "€ 9.50" },
+            { dish: "champignons à l'escargot (without snails)", price: "€ 9.50" },
+            { dish: "camembert au four", price: "€ 11.50" },
+            { dish: "carpaccio of beetroot with feta and walnut*", price: "€ 12.50" },
+            { dish: "prawns in garlic butter", price: "€ 10.50" },
+            { dish: "baked sardine fillets", price: "€ 11.50" },
+            { dish: "prawn croquettes with small salad", price: "€ 11.50" },
+            { dish: "cuisses de grenouille (if available)*", price: "€ 12.50" },
+            { dish: "beef carpaccio*", price: "€ 12.50" }
           ]
         },
         {
-          id: 'main_courses',
-          name: 'Main Courses',
-          french: 'les plats principaux',
-          description: 'Served with fresh seasonal vegetables and potatoes of your choice',
+          id: 'menu-selection',
+          name: 'Menu de Sélection',
+          french: '3-course menu',
+          description: '3 courses (starter, main, and dessert). Choose from all the delicious items on our menu! For dishes with * we charge € 2.50 supplement.',
           icon: 'main',
           items: [
-            { dish: "Ravioli (varying assortment)", price: "€19,50" },
-            { dish: "Fish casserole with lobster sauce", price: "€19,50" },
-            { dish: "Schnitzel with mushroom cream sauce (vegetarian option available)", price: "€19,50" },
-            { dish: "Spareribs à la Harrie", price: "€20,75" },
-            { dish: "Steak (180g) with red wine or pepper sauce", price: "€21,50" },
-            { dish: "Venison stew (Roe deer)", price: "€21,50" },
-            { dish: "Surf & Turf (steak & small shrimps)", price: "€23,50" },
-            { dish: "Venison steak (180g) with red wine sauce", price: "€26,50" }
+            { dish: "Menu de Sélection per person", price: "€ 35.50" }
+          ]
+        },
+        {
+          id: 'mains',
+          name: 'Main Courses',
+          french: 'les plats principaux',
+          description: 'Main courses are served with salad and fries. Sauces: red wine / pepper / mushroom cream',
+          icon: 'main',
+          items: [
+            { dish: "ravioli (vega - rotating assortment)", price: "€ 19.50" },
+            { dish: "fish pan with lobster sauce", price: "€ 19.50" },
+            { dish: "schnitzel (also vega) with sauce of choice", price: "€ 19.50" },
+            { dish: "spareribs à la Harrie", price: "€ 20.75" },
+            { dish: "steak (180gr.) with sauce of choice*", price: "€ 21.50" },
+            { dish: "boeuf bourguignon", price: "€ 19.50" },
+            { dish: "terre & mer (steak & prawns) with sauce of choice*", price: "€ 23.50" }
+          ]
+        },
+        {
+          id: 'kids',
+          name: 'Pour les Petits',
+          french: 'for the children',
+          description: '',
+          icon: 'dessert',
+          items: [
+            { dish: "fries with frikandel or chicken nuggets", price: "€ 10.00" },
+            { dish: "half portion of something tasty from the menu", price: "1/2 price" },
+            { dish: "kids ice cream", price: "€ 5.00" }
           ]
         },
         {
@@ -147,18 +185,18 @@ export default function MenuSection({ language }: MenuSectionProps) {
           description: '',
           icon: 'dessert',
           items: [
-            { dish: "Coffee/tea complete with sweets and a liqueur", price: "€8,00" },
-            { dish: "Vanilla ice cream with eggnog (advocaat) or chocolate sauce", price: "€9,50" },
-            { dish: "Crème brûlée", price: "€9,50" },
-            { dish: "Coupe 'Werm Keesje' (Hot Cherries)", price: "€11,50" },
-            { dish: "Cheese platter", price: "€12,50" }
+            { dish: "coffee/tea complete with treats and liqueur", price: "€ 8.50" },
+            { dish: "affogato (vanilla ice cream with espresso)", price: "€ 7.50" },
+            { dish: "vanilla ice cream with advocaat or chocolate sauce", price: "€ 9.50" },
+            { dish: "crème brûlée", price: "€ 9.50" },
+            { dish: "cheese board*", price: "€ 12.50" }
           ]
         }
       ]
     }
   }
 
-  const content = menuData[language]
+  const currentContent = menuData[language]
 
   const getIcon = (iconType: string) => {
     switch (iconType) {
@@ -200,8 +238,6 @@ export default function MenuSection({ language }: MenuSectionProps) {
     }
   }
 
-  const currentContent = menuData[language]
-
   return (
     <section 
       ref={sectionRef}
@@ -230,24 +266,26 @@ export default function MenuSection({ language }: MenuSectionProps) {
                 aria-controls={`menu-${category.id}`}
               >
                 <div className={styles.categoryTitle}>
-                  <span className={styles.icon}>{getIcon(category.icon)}</span>
+                  <div className={styles.icon}>
+                    {getIcon(category.icon)}
+                  </div>
                   <div className={styles.categoryNames}>
                     <span className={styles.categoryName}>{category.name}</span>
-                    <span className={styles.categoryFrench}>{category.french}</span>
+                    {category.french && (
+                      <span className={styles.categoryFrench}>{category.french}</span>
+                    )}
                   </div>
                 </div>
-                <span className={styles.arrow}>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 7.5l5 5 5-5"/>
+                <div className={styles.arrow}>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="6 9 12 15 18 9"/>
                   </svg>
-                </span>
+                </div>
               </button>
               
               <div 
-                id={`menu-${category.id}`}
                 className={`${styles.categoryContent} ${openCategory === category.id ? styles.expanded : ''}`}
-                role="region"
-                aria-labelledby={`header-${category.id}`}
+                id={`menu-${category.id}`}
               >
                 <div className={styles.itemsWrapper}>
                   {category.description && (
@@ -279,4 +317,3 @@ export default function MenuSection({ language }: MenuSectionProps) {
     </section>
   )
 }
-
