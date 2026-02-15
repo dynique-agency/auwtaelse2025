@@ -62,7 +62,7 @@ export default function InfoSection({ language }: InfoSectionProps) {
         {
           icon: 'gift',
           title: 'Cadeaubonnen',
-          description: 'We accepteren geen externe cadeaukaarten, maar we vertellen je graag meer over onze eigen cadeaubonnen.'
+          description: 'Doe eens een etentje cadeau! Bistro Auwt Aelse heeft eigen cadeaubonnen, voor elk gewenst bedrag en twee jaar geldig.'
         },
         {
           icon: 'pets',
@@ -102,7 +102,7 @@ export default function InfoSection({ language }: InfoSectionProps) {
         {
           icon: 'gift',
           title: 'Gift Vouchers',
-          description: 'We do not accept external gift cards, but we are happy to tell you more about our own gift vouchers.'
+          description: 'Treat someone to a lovely dinner! Bistro Auwt Aelse has its own gift vouchers, for any desired amount and valid for two years.'
         },
         {
           icon: 'pets',
