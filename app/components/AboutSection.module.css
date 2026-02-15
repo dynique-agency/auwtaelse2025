@@ -84,9 +84,9 @@
 }
 
 .intro {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: #333333;
   line-height: 1.8;
   letter-spacing: 0.01em;
   font-family: var(--font-sans);
@@ -145,7 +145,7 @@
   }
 
   .intro {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .text {
