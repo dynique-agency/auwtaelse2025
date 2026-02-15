@@ -14,8 +14,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2.5rem;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -24,16 +24,23 @@
 .column {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.75rem;
 }
 
-.column:nth-child(2) {
-  justify-content: start;
-  align-items: center;
+.infoText {
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
+  margin: 0;
+  font-family: var(--font-sans);
 }
 
-.column:nth-child(2) .linkList {
-  align-items: center;
+.infoTextSmall {
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+  margin: 0;
+  font-family: var(--font-sans);
 }
 
 .logo {
