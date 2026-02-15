@@ -63,16 +63,6 @@ export default function MenuSection({ language }: MenuSectionProps) {
           ]
         },
         {
-          id: 'menu-selection',
-          name: 'Menu de Sélection',
-          french: '3-gangen menu',
-          description: '3-gangen (voor-, hoofd- en nagerecht). Kies uit al het lekkers op onze kaart! Voor de gerechten met * rekenen wij € 2,50 supplement.',
-          icon: 'main',
-          items: [
-            { gerecht: "Menu de Sélection per persoon", prijs: "€ 35,50" }
-          ]
-        },
-        {
           id: 'hoofdgerechten',
           name: 'Hoofdgerechten',
           french: 'les plats principaux',
@@ -86,18 +76,24 @@ export default function MenuSection({ language }: MenuSectionProps) {
             { gerecht: "biefstuk (180gr.) met saus naar keuze*", prijs: "€ 21,50" },
             { gerecht: "boeuf bourguignon", prijs: "€ 19,50" },
             { gerecht: "terre & mer (biefstuk & garnaaltjes) met saus naar keuze*", prijs: "€ 23,50" }
-          ]
-        },
-        {
-          id: 'kinderen',
-          name: 'Pour les Petits',
-          french: 'voor de kinderen',
-          description: '',
-          icon: 'main',
-          items: [
-            { gerecht: "frietjes met frikandel of kipnuggets", prijs: "€ 10,00" },
-            { gerecht: "halve portie van iets lekkers uit de kaart", prijs: "1/2 prijs" },
-            { gerecht: "kinderijsje", prijs: "€ 5,00" }
+          ],
+          extra: [
+            {
+              title: 'Menu de Sélection',
+              subtitle: '3-gangen (voor-, hoofd- en nagerecht). Kies uit al het lekkers op onze kaart! Voor de gerechten met * rekenen wij € 2,50 supplement.',
+              items: [
+                { gerecht: "Menu de Sélection per persoon", prijs: "€ 35,50" }
+              ]
+            },
+            {
+              title: 'Pour les Petits',
+              subtitle: '',
+              items: [
+                { gerecht: "frietjes met frikandel of kipnuggets", prijs: "€ 10,00" },
+                { gerecht: "halve portie van iets lekkers uit de kaart", prijs: "1/2 prijs" },
+                { gerecht: "kinderijsje", prijs: "€ 5,00" }
+              ]
+            }
           ]
         },
         {
@@ -141,16 +137,6 @@ export default function MenuSection({ language }: MenuSectionProps) {
           ]
         },
         {
-          id: 'menu-selection',
-          name: 'Menu de Sélection',
-          french: '3-course menu',
-          description: '3 courses (starter, main, and dessert). Choose from all the delicious items on our menu! For dishes with * we charge € 2.50 supplement.',
-          icon: 'main',
-          items: [
-            { dish: "Menu de Sélection per person", price: "€ 35.50" }
-          ]
-        },
-        {
           id: 'mains',
           name: 'Main Courses',
           french: 'les plats principaux',
@@ -164,18 +150,24 @@ export default function MenuSection({ language }: MenuSectionProps) {
             { dish: "steak (180gr.) with sauce of choice*", price: "€ 21.50" },
             { dish: "boeuf bourguignon", price: "€ 19.50" },
             { dish: "terre & mer (steak & prawns) with sauce of choice*", price: "€ 23.50" }
-          ]
-        },
-        {
-          id: 'kids',
-          name: 'Pour les Petits',
-          french: 'for the children',
-          description: '',
-          icon: 'main',
-          items: [
-            { dish: "fries with frikandel or chicken nuggets", price: "€ 10.00" },
-            { dish: "half portion of something tasty from the menu", price: "1/2 price" },
-            { dish: "kids ice cream", price: "€ 5.00" }
+          ],
+          extra: [
+            {
+              title: 'Menu de Sélection',
+              subtitle: '3 courses (starter, main, and dessert). Choose from all the delicious items on our menu! For dishes with * we charge € 2.50 supplement.',
+              items: [
+                { dish: "Menu de Sélection per person", price: "€ 35.50" }
+              ]
+            },
+            {
+              title: 'Pour les Petits',
+              subtitle: '',
+              items: [
+                { dish: "fries with frikandel or chicken nuggets", price: "€ 10.00" },
+                { dish: "half portion of something tasty from the menu", price: "1/2 price" },
+                { dish: "kids ice cream", price: "€ 5.00" }
+              ]
+            }
           ]
         },
         {
@@ -304,6 +296,28 @@ export default function MenuSection({ language }: MenuSectionProps) {
                       </div>
                     ))}
                   </div>
+                  
+                  {category.extra && category.extra.map((extraSection: any, extraIndex: number) => (
+                    <div key={extraIndex} className={styles.extraSection}>
+                      <h4 className={styles.extraTitle}>{extraSection.title}</h4>
+                      {extraSection.subtitle && (
+                        <p className={styles.extraSubtitle}>{extraSection.subtitle}</p>
+                      )}
+                      <div className={styles.menuItems}>
+                        {extraSection.items.map((item: MenuItem, itemIndex: number) => (
+                          <div key={itemIndex} className={styles.menuItem}>
+                            <span className={styles.dishName}>
+                              {language === 'nl' ? item.gerecht : item.dish}
+                            </span>
+                            <span className={styles.dots}></span>
+                            <span className={styles.price}>
+                              {language === 'nl' ? item.prijs : item.price}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
