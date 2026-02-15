@@ -127,29 +127,6 @@ export default function InfoSection({ language }: InfoSectionProps) {
           <p className={styles.subtitle}>{text.subtitle}</p>
         </div>
 
-        <div className={styles.mainInfo}>
-          <div className={styles.infoCard}>
-            <h3 className={styles.infoLabel}>{text.visit.label}</h3>
-            <p className={styles.infoText}>{text.visit.address}</p>
-            <p className={styles.infoText}>{text.visit.city}</p>
-            <p className={styles.infoTextSmall}>{text.visit.country}</p>
-          </div>
-
-          <div className={styles.infoCard}>
-            <h3 className={styles.infoLabel}>{text.hours.label}</h3>
-            <p className={styles.infoText}>{text.hours.days}</p>
-            <p className={styles.infoText}>{text.hours.time}</p>
-            <p className={styles.infoTextSmall}>{text.hours.kitchen}</p>
-          </div>
-
-          <div className={styles.infoCard}>
-            <h3 className={styles.infoLabel}>{text.contact.label}</h3>
-            <p className={styles.infoText}>{text.contact.phone}</p>
-            <p className={styles.infoText}>{text.contact.mobile}</p>
-            <p className={styles.infoText}>{text.contact.email}</p>
-          </div>
-        </div>
-
         <div className={styles.extrasGrid}>
           {text.info.map((item, index) => (
             <button
