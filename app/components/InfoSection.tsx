@@ -56,8 +56,8 @@ export default function InfoSection({ language }: InfoSectionProps) {
         {
           icon: 'party',
           title: 'Feesten & Events',
-          description: 'Wij regelen graag uw feesten, borrels en koffietafels voor groepen tot 60 personen. Voor groepen zijn ook andere dagen en tijden mogelijk.',
-          contact: 'Bespreek de mogelijkheden graag met ons:'
+          description: 'Wij verzorgen feesten, borrels, koffietafels etc. tot ca 60 personen. Voor groepen zijn ook andere dagen en tijden mogelijk.',
+          contact: 'We informeren je graag:'
         },
         {
           icon: 'gift',
@@ -96,8 +96,8 @@ export default function InfoSection({ language }: InfoSectionProps) {
         {
           icon: 'party',
           title: 'Parties & Events',
-          description: 'We are happy to organize your parties, drinks and coffee tables for groups up to 60 people. Other days and times are also possible for groups.',
-          contact: 'Please discuss the possibilities with us:'
+          description: 'We cater parties, drinks, coffee tables etc. for groups up to approx. 60 people. For groups, other days and times are also possible.',
+          contact: 'We are happy to inform you:'
         },
         {
           icon: 'gift',
