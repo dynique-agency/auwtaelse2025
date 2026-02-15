@@ -32,7 +32,7 @@ export default function AtmosphereSection({ language }: AtmosphereSectionProps) 
   const content = {
     nl: {
       title: 'Sfeerimpressie',
-      subtitle: 'L\'Ambiance',
+      subtitle: 'l\'ambiance',
       description: 'Lekker Limburgs met een vleugje Frankrijk.',
       follow: 'Volg ons',
       instagram: 'Instagram',
@@ -40,7 +40,7 @@ export default function AtmosphereSection({ language }: AtmosphereSectionProps) 
     },
     en: {
       title: 'Atmosphere',
-      subtitle: 'L\'Ambiance',
+      subtitle: 'l\'ambiance',
       description: 'Delicious Limburg cuisine with a touch of France.',
       follow: 'Follow us',
       instagram: 'Instagram',

@@ -96,7 +96,7 @@ export default function Footer() {
             <p className={styles.businessInfo}>KVK: 95700854 • BTW: NL005169554B40</p>
           </div>
 
-          <p className={styles.copyright}>© {new Date().getFullYear()} Auwt Aelse Bistro. Tous droits réservés.</p>
+          <p className={styles.copyright}>© {new Date().getFullYear()} Auwt Aelse Bistro. tous droits réservés.</p>
           
           <div className={styles.credit}>
             <span className={styles.creditText}>Webdesign by</span>

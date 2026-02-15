@@ -31,7 +31,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
   const content = {
     nl: {
       title: 'Reserveren',
-      subtitle: 'Réservation',
+      subtitle: 'réservation',
       intro: 'Voor een reservering of meer informatie kun je ons bellen of mailen. Of loop gezellig een binnen.',
       phone: {
         label: 'Bellen',
@@ -44,7 +44,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
     },
     en: {
       title: 'Reservations',
-      subtitle: 'Réservation',
+      subtitle: 'réservation',
       intro: 'For a reservation or more information, you can call or email us. Or feel free to drop by.',
       phone: {
         label: 'Call',

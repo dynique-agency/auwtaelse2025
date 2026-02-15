@@ -40,13 +40,13 @@ export default function MenuSection({ language }: MenuSectionProps) {
   const menuData = {
     nl: {
       title: 'Menu',
-      subtitle: 'Nos Spécialités',
+      subtitle: 'nos spécialités',
       allergenenDisclaimer: 'Geef voedselallergieën en dieetwensen aub bij reservering aan ons door. In onze kleine keuken is kruisbesmetting niet geheel uit te sluiten.',
       categories: [
         {
           id: 'voorgerechten',
           name: 'Voorgerechten',
-          french: 'Les Entrées',
+          french: 'les entrées',
           description: '',
           icon: 'soup',
           items: [
@@ -67,7 +67,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
         {
           id: 'hoofdgerechten',
           name: 'Hoofdgerechten',
-          french: 'Les Plats Principaux',
+          french: 'les plats principaux',
           description: 'Gerechten worden geserveerd met verse groenten van het seizoen en aardappelen naar keuze',
           icon: 'main',
           items: [
@@ -84,7 +84,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
         {
           id: 'desserts',
           name: 'Desserts',
-          french: 'Pour les becs sucrés',
+          french: 'pour les becs sucrés',
           description: '',
           icon: 'dessert',
           items: [
@@ -99,13 +99,13 @@ export default function MenuSection({ language }: MenuSectionProps) {
     },
     en: {
       title: 'Menu',
-      subtitle: 'Nos Spécialités',
+      subtitle: 'nos spécialités',
       allergenenDisclaimer: 'Please inform us of food allergies and dietary requirements when making your reservation. In our small kitchen, cross-contamination cannot be completely excluded.',
       categories: [
         {
           id: 'starters',
           name: 'Starters',
-          french: 'Les Entrées',
+          french: 'les entrées',
           description: '',
           icon: 'soup',
           items: [
@@ -126,7 +126,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
         {
           id: 'main_courses',
           name: 'Main Courses',
-          french: 'Les Plats Principaux',
+          french: 'les plats principaux',
           description: 'Served with fresh seasonal vegetables and potatoes of your choice',
           icon: 'main',
           items: [
@@ -143,7 +143,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
         {
           id: 'desserts',
           name: 'Desserts',
-          french: 'Pour les becs sucrés',
+          french: 'pour les becs sucrés',
           description: '',
           icon: 'dessert',
           items: [
