@@ -55,7 +55,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin-bottom: 4rem;
-  grid-auto-rows: 10px;
 }
 
 .photoItem {
@@ -65,31 +64,7 @@
   transform: translateY(40px) scale(0.95);
   animation: none;
   border-radius: 2px;
-}
-
-/* Desktop Layout - Premium Asymmetric Pattern */
-.photoItem:nth-child(1) {
-  grid-row: span 32;
-}
-
-.photoItem:nth-child(2) {
-  grid-row: span 28;
-}
-
-.photoItem:nth-child(3) {
-  grid-row: span 36;
-}
-
-.photoItem:nth-child(4) {
-  grid-row: span 30;
-}
-
-.photoItem:nth-child(5) {
-  grid-row: span 34;
-}
-
-.photoItem:nth-child(6) {
-  grid-row: span 26;
+  aspect-ratio: 1;
 }
 
 .section.visible .photoItem {
@@ -241,33 +216,8 @@
 
 @media (max-width: 1024px) {
   .photoGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-  }
-
-  /* Tablet Layout - 2 Column Pattern */
-  .photoItem:nth-child(1) {
-    grid-row: span 30;
-  }
-
-  .photoItem:nth-child(2) {
-    grid-row: span 35;
-  }
-
-  .photoItem:nth-child(3) {
-    grid-row: span 28;
-  }
-
-  .photoItem:nth-child(4) {
-    grid-row: span 32;
-  }
-
-  .photoItem:nth-child(5) {
-    grid-row: span 34;
-  }
-
-  .photoItem:nth-child(6) {
-    grid-row: span 29;
   }
 }
 
@@ -293,34 +243,9 @@
   }
 
   .photoGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.875rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
     margin-bottom: 3rem;
-  }
-
-  /* Mobile Layout - Compact 2 Column Pattern */
-  .photoItem:nth-child(1) {
-    grid-row: span 28;
-  }
-
-  .photoItem:nth-child(2) {
-    grid-row: span 32;
-  }
-
-  .photoItem:nth-child(3) {
-    grid-row: span 26;
-  }
-
-  .photoItem:nth-child(4) {
-    grid-row: span 30;
-  }
-
-  .photoItem:nth-child(5) {
-    grid-row: span 31;
-  }
-
-  .photoItem:nth-child(6) {
-    grid-row: span 27;
   }
 
   .socialSection {
@@ -347,7 +272,7 @@
 
 @media (max-width: 480px) {
   .section {
-    padding: 4rem 1.25rem;
+    padding: 4rem 1rem;
   }
 
   .title {
@@ -359,32 +284,8 @@
   }
 
   .photoGrid {
-    gap: 0.625rem;
-  }
-
-  /* Extra Small Mobile - Tighter Pattern */
-  .photoItem:nth-child(1) {
-    grid-row: span 26;
-  }
-
-  .photoItem:nth-child(2) {
-    grid-row: span 30;
-  }
-
-  .photoItem:nth-child(3) {
-    grid-row: span 24;
-  }
-
-  .photoItem:nth-child(4) {
-    grid-row: span 28;
-  }
-
-  .photoItem:nth-child(5) {
-    grid-row: span 29;
-  }
-
-  .photoItem:nth-child(6) {
-    grid-row: span 25;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
   }
 }
 
