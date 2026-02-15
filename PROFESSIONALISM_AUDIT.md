@@ -132,8 +132,8 @@
 - ✅ Klachtprocedure
 
 **Bedrijfsgegevens:**
-- ✅ KVK: 70182151
-- ✅ BTW: NL70182151B01
+- ✅ KVK: 95700854
+- ✅ BTW: NL005169554B40
 - ✅ Adres volledig
 - ✅ Contact compleet
 

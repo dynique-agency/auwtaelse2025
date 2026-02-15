@@ -124,8 +124,8 @@
 **Status:** CORRECT VERMELD
 
 **Gegevens:**
-- ✅ **KVK nummer:** 70182151
-- ✅ **BTW nummer:** NL70182151B01
+- ✅ **KVK nummer:** 95700854
+- ✅ **BTW nummer:** NL005169554B40
 - ✅ **Bedrijfsnaam:** V.O.F. Brasserie Auwt Aelse
 - ✅ **Adres:** Dorpstraat 6, 6181 GX Elsloo
 
