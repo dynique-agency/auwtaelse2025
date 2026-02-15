@@ -65,9 +65,9 @@ export default function InfoSection({ language }: InfoSectionProps) {
           description: 'Doe eens een etentje cadeau! Bistro Auwt Aelse heeft eigen cadeaubonnen, voor elk gewenst bedrag en twee jaar geldig.'
         },
         {
-          icon: 'pets',
-          title: 'Huisdieren Welkom',
-          description: 'Jouw huisdier is van harte welkom in ons restaurant. We zorgen graag voor een fijne ervaring voor iedereen.'
+          icon: 'parking',
+          title: 'Parkeren',
+          description: 'Wanneer de parkeervakken in onze straat bezet zijn, is er ruim plek op enkele minuten loopafstand: Terhagen (Rivierparking), Scharberg en Maasberg.'
         }
       ]
     },
@@ -105,9 +105,9 @@ export default function InfoSection({ language }: InfoSectionProps) {
           description: 'Treat someone to a lovely dinner! Bistro Auwt Aelse has its own gift vouchers, for any desired amount and valid for two years.'
         },
         {
-          icon: 'pets',
-          title: 'Pets Welcome',
-          description: 'Your pet is welcome in our restaurant. We are happy to ensure a pleasant experience for everyone.'
+          icon: 'parking',
+          title: 'Parking',
+          description: 'When parking spaces on our street are occupied, there is ample space within a few minutes walk: Terhagen (River Parking), Scharberg and Maasberg.'
         }
       ]
     }
@@ -177,15 +177,11 @@ export default function InfoSection({ language }: InfoSectionProps) {
                       <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
                     </svg>
                   )}
-                  {item.icon === 'pets' && (
-                    <Image
-                      src="/pets-icon.png"
-                      alt="Pets Welcome"
-                      width={44}
-                      height={44}
-                      className={styles.petsImage}
-                      loading="lazy"
-                    />
+                  {item.icon === 'parking' && (
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2"/>
+                      <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
+                    </svg>
                   )}
                 </div>
                 <h4 className={styles.extraTitle}>{item.title}</h4>
