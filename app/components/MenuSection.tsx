@@ -41,7 +41,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
     nl: {
       title: 'Menu',
       subtitle: 'Nos Spécialités',
-      allergenenDisclaimer: 'Voor allergenen en dieetwensen kunt u contact met ons opnemen. Wij doen ons best rekening te houden met uw wensen.',
+      allergenenDisclaimer: 'Geef voedselallergieën en dieetwensen aub bij reservering aan ons door. In onze kleine keuken is kruisbesmetting niet geheel uit te sluiten.',
       categories: [
         {
           id: 'voorgerechten',
@@ -100,7 +100,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
     en: {
       title: 'Menu',
       subtitle: 'Nos Spécialités',
-      allergenenDisclaimer: 'For allergens and dietary requirements, please contact us. We do our best to accommodate your needs.',
+      allergenenDisclaimer: 'Please inform us of food allergies and dietary requirements when making your reservation. In our small kitchen, cross-contamination cannot be completely excluded.',
       categories: [
         {
           id: 'starters',
