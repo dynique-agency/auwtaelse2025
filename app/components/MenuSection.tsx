@@ -93,7 +93,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
           name: 'Pour les Petits',
           french: 'voor de kinderen',
           description: '',
-          icon: 'dessert',
+          icon: 'main',
           items: [
             { gerecht: "frietjes met frikandel of kipnuggets", prijs: "€ 10,00" },
             { gerecht: "halve portie van iets lekkers uit de kaart", prijs: "1/2 prijs" },
@@ -171,7 +171,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
           name: 'Pour les Petits',
           french: 'for the children',
           description: '',
-          icon: 'dessert',
+          icon: 'main',
           items: [
             { dish: "fries with frikandel or chicken nuggets", price: "€ 10.00" },
             { dish: "half portion of something tasty from the menu", price: "1/2 price" },
