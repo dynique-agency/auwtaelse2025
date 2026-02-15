@@ -72,7 +72,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
 
         <div className={styles.contactMethods}>
           <a 
-            href={`tel:${text.phone.number.replace(/\s/g, '')}`} 
+            href="tel:+31464377442" 
             className={styles.contactButton}
             aria-label={text.phone.label}
           >
