@@ -32,7 +32,7 @@ export default function ContactSection({ language }: ContactSectionProps) {
     nl: {
       title: 'Reserveren',
       subtitle: 'réservation',
-      intro: 'Voor een reservering of meer informatie kun je ons bellen of mailen. Of loop gezellig een binnen.',
+      intro: 'Voor een reservering of meer informatie kun je ons bellen of mailen. Of loop gezellig even binnen.',
       phone: {
         label: 'Bellen',
         number: '046 437 7442'
