@@ -233,7 +233,8 @@
   text-transform: uppercase;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: block;
+  text-align: center;
   padding: 0.5rem 0;
 }
 
