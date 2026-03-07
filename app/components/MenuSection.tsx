@@ -50,8 +50,8 @@ export default function MenuSection({ language }: MenuSectionProps) {
           description: 'Onze kaart bestaat uit eenvoudige, huisgemaakte gerechten. Dagvers bereid, dus op = op!',
           icon: 'soup',
           items: [
-            { gerecht: "soupe du jour", prijs: "€ 8,50" },
-            { gerecht: "unnesop gegratineerd", prijs: "€ 9,50" },
+            { gerecht: "Limburgse mosterdsoep met spekjes (ook vega mogelijk)", prijs: "€ 9,50" },
+            { gerecht: "kreeftenbisque met vis en garnalen", prijs: "€ 12,50" },
             { gerecht: "champignons à l'escargot (zonder slakken)", prijs: "€ 9,50" },
             { gerecht: "camembert au four", prijs: "€ 11,50" },
             { gerecht: "carpaccio van rode biet met feta en walnoot*", prijs: "€ 12,50" },
@@ -66,7 +66,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
           id: 'hoofdgerechten',
           name: 'Hoofdgerechten',
           french: 'les plats principaux',
-          description: 'De hoofdgerechten worden geserveerd met salade en frietjes. Sauzen: rode wijn / peper / champignonroom',
+          description: 'De hoofdgerechten worden geserveerd met salade en frietjes. Sauzen: rode wijn / peper',
           icon: 'main',
           items: [
             { gerecht: "ravioli (vega - wisselend assortiment)", prijs: "€ 19,50" },
@@ -74,7 +74,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
             { gerecht: "schnitzel (ook vega mogelijk) met saus naar keuze", prijs: "€ 19,50" },
             { gerecht: "spareribs à la Harrie", prijs: "€ 20,75" },
             { gerecht: "biefstuk (180gr.) met saus naar keuze*", prijs: "€ 21,50" },
-            { gerecht: "boeuf bourguignon", prijs: "€ 19,50" },
+            { gerecht: "Limburgs zoervleisj", prijs: "€ 19,50" },
             { gerecht: "terre & mer (biefstuk & garnaaltjes) met saus naar keuze*", prijs: "€ 23,50" }
           ],
           extra: [
@@ -124,8 +124,8 @@ export default function MenuSection({ language }: MenuSectionProps) {
           description: 'Our menu consists of simple, homemade dishes. Freshly prepared daily, so when it\'s gone, it\'s gone!',
           icon: 'soup',
           items: [
-            { dish: "soupe du jour", price: "€ 8.50" },
-            { dish: "french onion soup gratinated", price: "€ 9.50" },
+            { dish: "Limburgse mustard soup with bacon bits (vega option)", price: "€ 9.50" },
+            { dish: "lobster bisque with fish and shrimp", price: "€ 12.50" },
             { dish: "champignons à l'escargot (without snails)", price: "€ 9.50" },
             { dish: "camembert au four", price: "€ 11.50" },
             { dish: "carpaccio of beetroot with feta and walnut*", price: "€ 12.50" },
@@ -140,7 +140,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
           id: 'mains',
           name: 'Main Courses',
           french: 'les plats principaux',
-          description: 'Main courses are served with salad and fries. Sauces: red wine / pepper / mushroom cream',
+          description: 'Main courses are served with salad and fries. Sauces: red wine / pepper',
           icon: 'main',
           items: [
             { dish: "ravioli (vega - rotating assortment)", price: "€ 19.50" },
@@ -148,7 +148,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
             { dish: "schnitzel (also vega) with sauce of choice", price: "€ 19.50" },
             { dish: "spareribs à la Harrie", price: "€ 20.75" },
             { dish: "steak (180gr.) with sauce of choice*", price: "€ 21.50" },
-            { dish: "boeuf bourguignon", price: "€ 19.50" },
+            { dish: "Limburgse zoervleisj (sweet & sour meat)", price: "€ 19.50" },
             { dish: "terre & mer (steak & prawns) with sauce of choice*", price: "€ 23.50" }
           ],
           extra: [
