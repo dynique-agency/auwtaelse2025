@@ -21,39 +21,39 @@ export default function Footer() {
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Navigatie</h3>
+            <h3 className={styles.columnTitle}>navigatie</h3>
             <ul className={styles.linkList}>
-              <li><a href="#over-ons" className={styles.link}>Over Ons</a></li>
-              <li><a href="#menu" className={styles.link}>Menu</a></li>
-              <li><a href="#sfeerimpressie" className={styles.link}>Sfeerimpressie</a></li>
-              <li><a href="#reserveren" className={styles.link}>Reserveren</a></li>
-              <li><a href="#algemene-informatie" className={styles.link}>Algemene Informatie</a></li>
+              <li><a href="#over-ons" className={styles.link}>over ons</a></li>
+              <li><a href="#menu" className={styles.link}>menu</a></li>
+              <li><a href="#sfeerimpressie" className={styles.link}>sfeerimpressie</a></li>
+              <li><a href="#reserveren" className={styles.link}>reserveren</a></li>
+              <li><a href="#algemene-informatie" className={styles.link}>algemene informatie</a></li>
             </ul>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Bezoek Ons</h3>
+            <h3 className={styles.columnTitle}>bezoek ons</h3>
             <p className={styles.infoText}>Dorpstraat 6</p>
             <p className={styles.infoText}>6181 GX Elsloo</p>
             <p className={styles.infoText}>Nederland</p>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Openingstijden</h3>
-            <p className={styles.infoText}>Donderdag t/m Zondag</p>
+            <h3 className={styles.columnTitle}>openingstijden</h3>
+            <p className={styles.infoText}>donderdag t/m zondag</p>
             <p className={styles.infoText}>vanaf 17.30u</p>
-            <p className={styles.infoTextSmall}>Laatste bestelling: 21.00u</p>
+            <p className={styles.infoTextSmall}>laatste bestelling: 21.00u</p>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Contact</h3>
+            <h3 className={styles.columnTitle}>contact</h3>
             <p className={styles.infoText}><a href="tel:+31464377442" className={styles.link}>046 437 7442</a></p>
             <p className={styles.infoText}><a href="tel:+31612176780" className={styles.link}>06 1217 6780</a></p>
             <p className={styles.infoText}><a href="mailto:info@auwtaelse.nl" className={styles.link}>info@auwtaelse.nl</a></p>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Volg Ons</h3>
+            <h3 className={styles.columnTitle}>volg ons</h3>
             <div className={styles.social}>
               <a 
                 href="https://www.instagram.com/auwtaelse" 

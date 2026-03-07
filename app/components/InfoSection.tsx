@@ -33,7 +33,7 @@ export default function InfoSection({ language }: InfoSectionProps) {
   const content = {
     nl: {
       title: 'Algemene Informatie',
-      subtitle: 'Informations Générales',
+      subtitle: 'informations générales',
       visit: {
         label: 'Bezoek Ons',
         address: 'Dorpstraat 6',
@@ -73,7 +73,7 @@ export default function InfoSection({ language }: InfoSectionProps) {
     },
     en: {
       title: 'General Information',
-      subtitle: 'Informations Générales',
+      subtitle: 'informations générales',
       visit: {
         label: 'Visit Us',
         address: 'Dorpstraat 6',
