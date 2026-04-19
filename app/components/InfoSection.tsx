@@ -96,7 +96,7 @@ export default function InfoSection({ language }: InfoSectionProps) {
         {
           icon: 'party',
           title: 'Parties & Events',
-          description: 'We cater parties, drinks, coffee tables etc. for groups up to approx. 60 people. For groups, other days and times are also possible.',
+          description: 'We cater parties, drinks, receptions etc. for groups up to approx. 60 people. For groups, other days and times are also possible.',
           contact: 'We are happy to inform you:'
         },
         {

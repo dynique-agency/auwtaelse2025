@@ -42,7 +42,7 @@ export default function AboutSection({ language }: AboutSectionProps) {
       title: 'About Us',
       intro: 'At Auwt Aelse you can enjoy a delicious dinner; a mix of mother\'s kitchen and the Mediterranean.',
       opening: 'The bistro is open from Thursday to Sunday from 5:30 PM. Our kitchen accepts last orders at 9:00 PM.',
-      events: 'We also cater parties, drinks, coffee tables etc. for groups up to 60 people. In nice weather we serve drinks on our petite terrasse!',
+      events: 'We also cater parties, drinks, receptions etc. for groups up to 60 people. In nice weather we serve drinks on our petite terrasse!',
       info: 'For groups, other days and times are also possible. We are happy to inform you.',
       closing: 'Bon appétit!',
       signature: 'Ron & Karin'
