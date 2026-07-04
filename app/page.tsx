@@ -23,6 +23,10 @@ export default function Home() {
   }
 
   useEffect(() => {
+    document.documentElement.lang = language
+  }, [language])
+
+  useEffect(() => {
     const sections = ['over-ons', 'menu', 'sfeerimpressie', 'reserveren', 'algemene-informatie']
     
     const observer = new IntersectionObserver(
@@ -69,7 +73,7 @@ export default function Home() {
           <AtmosphereSection language={language} />
           <ContactSection language={language} />
           <InfoSection language={language} />
-          <Footer />
+          <Footer language={language} />
         </div>
         <FloatingReserveButton language={language} />
         <CookieBanner />

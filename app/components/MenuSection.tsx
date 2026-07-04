@@ -50,39 +50,42 @@ export default function MenuSection({ language }: MenuSectionProps) {
           description: 'Onze kaart bestaat uit eenvoudige, huisgemaakte gerechten. Dagvers bereid, dus op = op!',
           icon: 'soup',
           items: [
-            { gerecht: "Limburgse mosterdsoep met spekjes (ook vega mogelijk)", prijs: "€ 9,50" },
-            { gerecht: "kreeftenbisque met vis en garnalen", prijs: "€ 12,50" },
-            { gerecht: "champignons à l'escargot (zonder slakken)", prijs: "€ 9,50" },
-            { gerecht: "camembert au four", prijs: "€ 11,50" },
-            { gerecht: "carpaccio van rode biet met feta en walnoot*", prijs: "€ 12,50" },
+            { gerecht: "soup du jour", prijs: "€ 9,75" },
+            { gerecht: "oeuf mayonnaise", prijs: "€ 9,75" },
+            { gerecht: "camembert au four", prijs: "€ 12,00" },
+            { gerecht: "carpaccio van rode biet met feta en walnoot*", prijs: "€ 12,75" },
             { gerecht: "garnaaltjes in knoflookboter", prijs: "€ 10,50" },
-            { gerecht: "sardinefilets uit de oven", prijs: "€ 11,50" },
             { gerecht: "gambakroketjes met kleine salade", prijs: "€ 11,50" },
-            { gerecht: "cuisses de grenouille (indien voorradig)*", prijs: "€ 12,50" },
-            { gerecht: "carpaccio van rund*", prijs: "€ 12,50" }
+            { gerecht: "zalmcocktail classique", prijs: "€ 12,00" },
+            { gerecht: "coquilles st-jacques gratinée*", prijs: "€ 12,75" },
+            { gerecht: "escargots met kruidenboter (6st.)", prijs: "€ 12,00" },
+            { gerecht: "cuisses de grenouille*", prijs: "€ 12,75" },
+            { gerecht: "carpaccio van rund*", prijs: "€ 12,75" }
           ]
         },
         {
           id: 'hoofdgerechten',
           name: 'Hoofdgerechten',
           french: 'les plats principaux',
-          description: 'De hoofdgerechten worden geserveerd met salade en frietjes. Sauzen: rode wijn / peper',
+          description: 'De hoofdgerechten worden geserveerd met frietjes en salade. Onze sauzen: rode wijn, peperroom en champignonroom (allemaal lactosevrij!)',
           icon: 'main',
           items: [
-            { gerecht: "ravioli (vega - wisselend assortiment)", prijs: "€ 19,50" },
-            { gerecht: "vispannetje met kreeftsaus", prijs: "€ 19,50" },
-            { gerecht: "schnitzel (ook vega mogelijk) met saus naar keuze", prijs: "€ 19,50" },
-            { gerecht: "spareribs à la Harrie", prijs: "€ 20,75" },
-            { gerecht: "biefstuk (180gr.) met saus naar keuze*", prijs: "€ 21,50" },
-            { gerecht: "Limburgs zoervleisj", prijs: "€ 19,50" },
-            { gerecht: "terre & mer (biefstuk & garnaaltjes) met saus naar keuze*", prijs: "€ 23,50" }
+            { gerecht: "salade méditerranée (wisselend assortiment) - met brood", prijs: "€ 19,75" },
+            { gerecht: "ravioli (vega)", prijs: "€ 19,75" },
+            { gerecht: "vispannetje met kreeftsaus", prijs: "€ 19,75" },
+            { gerecht: "poisson du jour*", prijs: "€ 22,00" },
+            { gerecht: "Limburgs zoervleisj", prijs: "€ 19,75" },
+            { gerecht: "schnitzel (ook vega mogelijk) - met saus naar keuze", prijs: "€ 19,75" },
+            { gerecht: "spareribs à la Harrie*", prijs: "€ 22,00" },
+            { gerecht: "biefstuk (180gr.) - met saus naar keuze*", prijs: "€ 22,50" },
+            { gerecht: "steak beurre café de paris*", prijs: "€ 23,50" }
           ],
           extra: [
             {
               title: 'Menu de Sélection',
               subtitle: '3-gangen (voor-, hoofd- en nagerecht). Kies uit al het lekkers op onze kaart! Voor de gerechten met * rekenen wij € 2,50 supplement.',
               items: [
-                { gerecht: "Menu de Sélection per persoon", prijs: "€ 35,50" }
+                { gerecht: "Menu de Sélection per persoon", prijs: "€ 37,00" }
               ]
             },
             {
@@ -90,7 +93,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
               subtitle: '',
               items: [
                 { gerecht: "frietjes met frikandel of kipnuggets", prijs: "€ 10,00" },
-                { gerecht: "halve portie van iets lekkers uit de kaart", prijs: "1/2 prijs" },
+                { gerecht: "halve portie zoervleisj of spareribs", prijs: "€ 12,50" },
                 { gerecht: "kinderijsje", prijs: "€ 5,00" }
               ]
             }
@@ -104,10 +107,12 @@ export default function MenuSection({ language }: MenuSectionProps) {
           icon: 'dessert',
           items: [
             { gerecht: "koffie/thee compleet met lekkers en likeurtje", prijs: "€ 8,50" },
-            { gerecht: "affogato (vanille-ijs overgoten met espresso)", prijs: "€ 7,50" },
-            { gerecht: "vanille-ijs met advocaat- of chocoladesaus", prijs: "€ 9,50" },
+            { gerecht: "affogato (vanille-ijs met een shotje espresso)", prijs: "€ 7,50" },
+            { gerecht: "vanille-ijs met advocaatsaus óf chocoladesaus", prijs: "€ 9,50" },
+            { gerecht: "vanille-ijs met boerenjongens", prijs: "€ 9,50" },
             { gerecht: "crème brûlée", prijs: "€ 9,50" },
-            { gerecht: "kaasplankje*", prijs: "€ 12,50" }
+            { gerecht: "méli-mélo (mix van zomerfruit, room en meringue)*", prijs: "€ 11,50" },
+            { gerecht: "kaasplankje*", prijs: "€ 12,75" }
           ]
         }
       ]
@@ -124,39 +129,42 @@ export default function MenuSection({ language }: MenuSectionProps) {
           description: 'Our menu consists of simple, homemade dishes. Freshly prepared daily, so when it\'s gone, it\'s gone!',
           icon: 'soup',
           items: [
-            { dish: "Limburgse mustard soup with bacon bits (vega option)", price: "€ 9.50" },
-            { dish: "lobster bisque with fish and shrimp", price: "€ 12.50" },
-            { dish: "champignons à l'escargot (without snails)", price: "€ 9.50" },
-            { dish: "camembert au four", price: "€ 11.50" },
-            { dish: "carpaccio of beetroot with feta and walnut*", price: "€ 12.50" },
+            { dish: "soup du jour", price: "€ 9.75" },
+            { dish: "oeuf mayonnaise", price: "€ 9.75" },
+            { dish: "camembert au four", price: "€ 12.00" },
+            { dish: "carpaccio of beetroot with feta and walnut*", price: "€ 12.75" },
             { dish: "prawns in garlic butter", price: "€ 10.50" },
-            { dish: "baked sardine fillets", price: "€ 11.50" },
             { dish: "prawn croquettes with small salad", price: "€ 11.50" },
-            { dish: "cuisses de grenouille (if available)*", price: "€ 12.50" },
-            { dish: "beef carpaccio*", price: "€ 12.50" }
+            { dish: "classic salmon cocktail", price: "€ 12.00" },
+            { dish: "coquilles st-jacques au gratin*", price: "€ 12.75" },
+            { dish: "escargots with herb butter (6 pcs.)", price: "€ 12.00" },
+            { dish: "cuisses de grenouille*", price: "€ 12.75" },
+            { dish: "beef carpaccio*", price: "€ 12.75" }
           ]
         },
         {
           id: 'mains',
           name: 'Main Courses',
           french: 'les plats principaux',
-          description: 'Main courses are served with salad and fries. Sauces: red wine / pepper',
+          description: 'Main courses are served with fries and salad. Our sauces: red wine, pepper cream and mushroom cream (all lactose-free!)',
           icon: 'main',
           items: [
-            { dish: "ravioli (vega - rotating assortment)", price: "€ 19.50" },
-            { dish: "fish pan with lobster sauce", price: "€ 19.50" },
-            { dish: "schnitzel (also vega) with sauce of choice", price: "€ 19.50" },
-            { dish: "spareribs à la Harrie", price: "€ 20.75" },
-            { dish: "steak (180gr.) with sauce of choice*", price: "€ 21.50" },
-            { dish: "Limburgse zoervleisj (sweet & sour meat)", price: "€ 19.50" },
-            { dish: "terre & mer (steak & prawns) with sauce of choice*", price: "€ 23.50" }
+            { dish: "mediterranean salad (rotating assortment) - with bread", price: "€ 19.75" },
+            { dish: "ravioli (vega)", price: "€ 19.75" },
+            { dish: "fish pan with lobster sauce", price: "€ 19.75" },
+            { dish: "fish of the day*", price: "€ 22.00" },
+            { dish: "Limburgse zoervleisj (sweet & sour meat)", price: "€ 19.75" },
+            { dish: "schnitzel (also vega) with sauce of choice", price: "€ 19.75" },
+            { dish: "spareribs à la Harrie*", price: "€ 22.00" },
+            { dish: "steak (180gr.) with sauce of choice*", price: "€ 22.50" },
+            { dish: "steak beurre café de paris*", price: "€ 23.50" }
           ],
           extra: [
             {
               title: 'Menu de Sélection',
               subtitle: '3 courses (starter, main, and dessert). Choose from all the delicious items on our menu! For dishes with * we charge € 2.50 supplement.',
               items: [
-                { dish: "Menu de Sélection per person", price: "€ 35.50" }
+                { dish: "Menu de Sélection per person", price: "€ 37.00" }
               ]
             },
             {
@@ -164,7 +172,7 @@ export default function MenuSection({ language }: MenuSectionProps) {
               subtitle: '',
               items: [
                 { dish: "fries with frikandel or chicken nuggets", price: "€ 10.00" },
-                { dish: "half portion of something tasty from the menu", price: "1/2 price" },
+                { dish: "half portion of zoervleisj or spareribs", price: "€ 12.50" },
                 { dish: "kids ice cream", price: "€ 5.00" }
               ]
             }
@@ -178,10 +186,12 @@ export default function MenuSection({ language }: MenuSectionProps) {
           icon: 'dessert',
           items: [
             { dish: "coffee/tea complete with treats and liqueur", price: "€ 8.50" },
-            { dish: "affogato (vanilla ice cream with espresso)", price: "€ 7.50" },
+            { dish: "affogato (vanilla ice cream with a shot of espresso)", price: "€ 7.50" },
             { dish: "vanilla ice cream with advocaat or chocolate sauce", price: "€ 9.50" },
+            { dish: "vanilla ice cream with boerenjongens", price: "€ 9.50" },
             { dish: "crème brûlée", price: "€ 9.50" },
-            { dish: "cheese board*", price: "€ 12.50" }
+            { dish: "méli-mélo (mix of summer fruit, cream and meringue)*", price: "€ 11.50" },
+            { dish: "cheese board*", price: "€ 12.75" }
           ]
         }
       ]

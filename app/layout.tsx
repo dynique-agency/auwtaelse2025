@@ -2,10 +2,14 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://auwtaelse.nl'),
   title: 'Auwt Aelse - Bistro in Elsloo | Franse Keuken & Méditerranée',
   description: 'Bistro Auwt Aelse in Elsloo. Geniet van verfijnde Franse gerechten met een mediterrane twist. Reserveer nu! Donderdag t/m zondag vanaf 17.30u.',
   keywords: ['bistro', 'restaurant', 'Elsloo', 'Franse keuken', 'méditerranée', 'fine dining', 'Auwt Aelse'],
   authors: [{ name: 'Auwt Aelse' }],
+  alternates: {
+    canonical: 'https://auwtaelse.nl',
+  },
   openGraph: {
     title: 'Auwt Aelse - Bistro in Elsloo',
     description: 'Bistro Auwt Aelse - Een mix van moeders keuken en de méditerranée',
@@ -13,6 +17,20 @@ export const metadata: Metadata = {
     siteName: 'Auwt Aelse',
     locale: 'nl_NL',
     type: 'website',
+    images: [
+      {
+        url: '/frontofrestaurant.webp',
+        width: 1600,
+        height: 1369,
+        alt: 'Auwt Aelse Restaurant',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Auwt Aelse - Bistro in Elsloo',
+    description: 'Bistro Auwt Aelse - Een mix van moeders keuken en de méditerranée',
+    images: ['/frontofrestaurant.webp'],
   },
 }
 
@@ -27,7 +45,7 @@ export default function RootLayout({
     "name": "Auwt Aelse",
     "legalName": "V.O.F. Brasserie Auwt Aelse",
     "description": "Bistro Auwt Aelse - Een mix van moeders keuken en de méditerranée. Verfijnde Franse gerechten in een intieme setting.",
-    "image": "https://auwtaelse.nl/frontofrestaurant.png",
+    "image": "https://auwtaelse.nl/frontofrestaurant.webp",
     "taxID": "NL005169554B40",
     "address": {
       "@type": "PostalAddress",
@@ -105,7 +123,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" 
           rel="stylesheet"
         />
-        <link rel="preload" as="image" href="/img1.png" />
+        <link rel="preload" as="image" href="/img1.webp" />
         <link rel="preload" as="image" href="/logo.svg" />
         <script
           type="application/ld+json"

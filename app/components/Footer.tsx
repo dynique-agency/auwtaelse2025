@@ -1,9 +1,69 @@
 'use client'
 
+import { Fragment } from 'react'
 import Image from 'next/image'
 import styles from './Footer.module.css'
 
-export default function Footer() {
+interface FooterProps {
+  language: 'nl' | 'en'
+}
+
+export default function Footer({ language }: FooterProps) {
+  const content = {
+    nl: {
+      navTitle: 'navigatie',
+      nav: [
+        { label: 'over ons', href: '#over-ons' },
+        { label: 'menu', href: '#menu' },
+        { label: 'sfeerimpressie', href: '#sfeerimpressie' },
+        { label: 'reserveren', href: '#reserveren' },
+        { label: 'algemene informatie', href: '#algemene-informatie' },
+      ],
+      visitTitle: 'bezoek ons',
+      address: ['Dorpstraat 6', '6181 GX Elsloo', 'Nederland'],
+      hoursTitle: 'openingstijden',
+      hoursDays: 'donderdag t/m zondag',
+      hoursTime: 'vanaf 17.30u',
+      hoursNote: 'laatste bestelling: 21.00u',
+      contactTitle: 'contact',
+      followTitle: 'volg ons',
+      legal: [
+        { label: 'Privacyverklaring', href: '/privacy' },
+        { label: 'Cookiebeleid', href: '/cookies' },
+        { label: 'Algemene Voorwaarden', href: '/algemene-voorwaarden' },
+      ],
+      copyright: (year: number) => `© ${year} Auwt Aelse Bistro. tous droits réservés.`,
+      creditText: 'Webdesign by',
+    },
+    en: {
+      navTitle: 'navigation',
+      nav: [
+        { label: 'about us', href: '#over-ons' },
+        { label: 'menu', href: '#menu' },
+        { label: 'atmosphere', href: '#sfeerimpressie' },
+        { label: 'reservations', href: '#reserveren' },
+        { label: 'general info', href: '#algemene-informatie' },
+      ],
+      visitTitle: 'visit us',
+      address: ['Dorpstraat 6', '6181 GX Elsloo', 'The Netherlands'],
+      hoursTitle: 'opening hours',
+      hoursDays: 'Thursday to Sunday',
+      hoursTime: 'from 5:30 PM',
+      hoursNote: 'last order: 9:00 PM',
+      contactTitle: 'contact',
+      followTitle: 'follow us',
+      legal: [
+        { label: 'Privacy Policy', href: '/privacy' },
+        { label: 'Cookie Policy', href: '/cookies' },
+        { label: 'Terms & Conditions', href: '/algemene-voorwaarden' },
+      ],
+      copyright: (year: number) => `© ${year} Auwt Aelse Bistro. tous droits réservés.`,
+      creditText: 'Webdesign by',
+    },
+  }
+
+  const text = content[language]
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -21,39 +81,37 @@ export default function Footer() {
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>navigatie</h3>
+            <h3 className={styles.columnTitle}>{text.navTitle}</h3>
             <ul className={styles.linkList}>
-              <li><a href="#over-ons" className={styles.link}>over ons</a></li>
-              <li><a href="#menu" className={styles.link}>menu</a></li>
-              <li><a href="#sfeerimpressie" className={styles.link}>sfeerimpressie</a></li>
-              <li><a href="#reserveren" className={styles.link}>reserveren</a></li>
-              <li><a href="#algemene-informatie" className={styles.link}>algemene informatie</a></li>
+              {text.nav.map((item) => (
+                <li key={item.href}><a href={item.href} className={styles.link}>{item.label}</a></li>
+              ))}
             </ul>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>bezoek ons</h3>
-            <p className={styles.infoText}>Dorpstraat 6</p>
-            <p className={styles.infoText}>6181 GX Elsloo</p>
-            <p className={styles.infoText}>Nederland</p>
+            <h3 className={styles.columnTitle}>{text.visitTitle}</h3>
+            {text.address.map((line) => (
+              <p key={line} className={styles.infoText}>{line}</p>
+            ))}
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>openingstijden</h3>
-            <p className={styles.infoText}>donderdag t/m zondag</p>
-            <p className={styles.infoText}>vanaf 17.30u</p>
-            <p className={styles.infoTextSmall}>laatste bestelling: 21.00u</p>
+            <h3 className={styles.columnTitle}>{text.hoursTitle}</h3>
+            <p className={styles.infoText}>{text.hoursDays}</p>
+            <p className={styles.infoText}>{text.hoursTime}</p>
+            <p className={styles.infoTextSmall}>{text.hoursNote}</p>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>contact</h3>
+            <h3 className={styles.columnTitle}>{text.contactTitle}</h3>
             <p className={styles.infoText}><a href="tel:+31464377442" className={styles.link}>046 437 7442</a></p>
             <p className={styles.infoText}><a href="tel:+31612176780" className={styles.link}>06 1217 6780</a></p>
             <p className={styles.infoText}><a href="mailto:info@auwtaelse.nl" className={styles.link}>info@auwtaelse.nl</a></p>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>volg ons</h3>
+            <h3 className={styles.columnTitle}>{text.followTitle}</h3>
             <div className={styles.social}>
               <a 
                 href="https://www.instagram.com/auwtaelse" 
@@ -85,22 +143,23 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <div className={styles.legal}>
-            <a href="/privacy" className={styles.legalLink}>Privacyverklaring</a>
-            <span className={styles.legalSeparator}>•</span>
-            <a href="/cookies" className={styles.legalLink}>Cookiebeleid</a>
-            <span className={styles.legalSeparator}>•</span>
-            <a href="/algemene-voorwaarden" className={styles.legalLink}>Algemene Voorwaarden</a>
+            {text.legal.map((item, index) => (
+              <Fragment key={item.href}>
+                {index > 0 && <span className={styles.legalSeparator}>•</span>}
+                <a href={item.href} className={styles.legalLink}>{item.label}</a>
+              </Fragment>
+            ))}
           </div>
-          
+
           <div className={styles.business}>
             <p className={styles.businessInfo}>KVK: 95700854 • BTW: NL005169554B40</p>
           </div>
 
-          <p className={styles.copyright}>© {new Date().getFullYear()} Auwt Aelse Bistro. tous droits réservés.</p>
-          
+          <p className={styles.copyright}>{text.copyright(new Date().getFullYear())}</p>
+
           <div className={styles.credit}>
-            <span className={styles.creditText}>Webdesign by</span>
-            <a 
+            <span className={styles.creditText}>{text.creditText}</span>
+            <a
               href="https://dynique.nl" 
               target="_blank" 
               rel="noopener noreferrer"

@@ -174,8 +174,8 @@ export default function InfoSection({ language }: InfoSectionProps) {
                   <>
                     <p className={styles.contactPrompt}>{item.contact}</p>
                     <div className={styles.infoContactButtons}>
-                      <a 
-                        href="tel:0464377442" 
+                      <a
+                        href="tel:+31464377442"
                         className={styles.infoContactButton}
                         onClick={(e) => e.stopPropagation()}
                       >

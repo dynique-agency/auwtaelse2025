@@ -12,7 +12,7 @@ export default function Hero({ language }: HeroProps) {
     <section className={styles.hero}>
       <div className={styles.imageContainer}>
         <Image
-          src="/img1.png"
+          src="/img1.webp"
           alt="Restaurant interior"
           fill
           priority

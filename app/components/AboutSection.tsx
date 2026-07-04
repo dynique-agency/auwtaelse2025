@@ -62,7 +62,7 @@ export default function AboutSection({ language }: AboutSectionProps) {
           <div className={styles.imageContent}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/frontofrestaurant.png"
+                src="/frontofrestaurant.webp"
                 alt="Auwt Aelse Restaurant"
                 fill
                 className={styles.image}

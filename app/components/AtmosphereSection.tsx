@@ -51,12 +51,12 @@ export default function AtmosphereSection({ language }: AtmosphereSectionProps) 
   const text = content[language]
 
   const photos = [
-    { id: 1, src: '/img1.png', alt: 'Restaurant interior' },
-    { id: 2, src: '/img2.png', alt: 'Dining atmosphere' },
-    { id: 3, src: '/img3.png', alt: 'Restaurant ambiance' },
-    { id: 4, src: '/img6.png', alt: 'Evening atmosphere' },
-    { id: 5, src: '/img7.png', alt: 'Restaurant experience' },
-    { id: 6, src: '/img8.png', alt: 'Bistro details' },
+    { id: 1, src: '/img1.webp', alt: 'Restaurant interior' },
+    { id: 2, src: '/img2.webp', alt: 'Dining atmosphere' },
+    { id: 3, src: '/img3.webp', alt: 'Restaurant ambiance' },
+    { id: 4, src: '/img6.webp', alt: 'Evening atmosphere' },
+    { id: 5, src: '/img7.webp', alt: 'Restaurant experience' },
+    { id: 6, src: '/img8.webp', alt: 'Bistro details' },
   ]
 
   return (
