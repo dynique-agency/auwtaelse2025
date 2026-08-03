@@ -245,21 +245,22 @@
 }
 
 .closeButton {
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.9rem 3rem;
-  background: #000000;
-  color: #ffffff;
-  border: 2px solid #000000;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent;
+  color: #000000;
+  border: 1.5px solid rgba(0, 0, 0, 0.25);
   transition: all var(--transition-fast) 0.05s;
 }
 
 .closeButton:hover {
-  background: transparent;
-  color: #000000;
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
@@ -292,9 +293,5 @@
 
   .notes {
     padding: 1.25rem 1.25rem;
-  }
-
-  .closeButton {
-    width: 100%;
   }
 }

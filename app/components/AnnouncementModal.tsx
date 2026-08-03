@@ -29,7 +29,7 @@ const text = {
     openLabel: 'open in augustus',
     noteTitle: 'let op',
     noteSunday: 'Zondag 9 augustus zijn we uitzonderlijk gesloten.',
-    noteBreak: 'Vanaf zondag 16 augustus genieten we 2 weekjes vakantie — dan is de bistro gesloten.',
+    noteBreak: 'Vanaf zondag 16 augustus genieten we 2 weekjes vakantie; dan is de bistro gesloten.',
     outro: 'Tot snel!',
     questions: 'Vragen? Bel',
     close: 'Begrepen',
@@ -42,7 +42,7 @@ const text = {
     openLabel: 'open in august',
     noteTitle: 'please note',
     noteSunday: "We're exceptionally closed on Sunday, August 9.",
-    noteBreak: "From Sunday, August 16 we're taking a 2-week break — the bistro will be closed.",
+    noteBreak: "From Sunday, August 16 we're taking a 2-week break; the bistro will be closed.",
     outro: 'See you soon!',
     questions: 'Questions? Call',
     close: 'Got it',
@@ -141,8 +141,10 @@ export default function AnnouncementModal({ language }: AnnouncementModalProps) 
           <a href="tel:+31464377442" className={styles.phoneLink}>
             {t.questions} 046 437 7442
           </a>
-          <button className={styles.closeButton} onClick={handleClose}>
-            {t.close}
+          <button className={styles.closeButton} onClick={handleClose} aria-label={t.close}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
           </button>
         </div>
       </div>
