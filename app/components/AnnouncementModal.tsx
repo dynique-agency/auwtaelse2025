@@ -7,7 +7,6 @@ interface AnnouncementModalProps {
   language: 'nl' | 'en'
 }
 
-const DISMISS_KEY = 'announcement-zomertijd-2026-dismissed'
 const EXPIRES_AT = new Date('2026-08-31T23:59:59')
 
 const OPEN_DATES = [
@@ -56,7 +55,6 @@ export default function AnnouncementModal({ language }: AnnouncementModalProps) 
 
   useEffect(() => {
     if (new Date() > EXPIRES_AT) return
-    if (localStorage.getItem(DISMISS_KEY)) return
 
     const timer = setTimeout(() => setIsOpen(true), 600)
     return () => clearTimeout(timer)
@@ -82,7 +80,6 @@ export default function AnnouncementModal({ language }: AnnouncementModalProps) 
   const handleClose = () => {
     setIsClosing(true)
     setTimeout(() => {
-      localStorage.setItem(DISMISS_KEY, 'true')
       setIsOpen(false)
     }, 350)
   }
