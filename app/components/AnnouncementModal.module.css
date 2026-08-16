@@ -55,13 +55,14 @@
 .modal {
   position: relative;
   width: 100%;
-  max-width: 560px;
+  max-width: 460px;
   max-height: 90vh;
   overflow-y: auto;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
-  padding: 2.75rem 3rem 2rem;
+  padding: 3.5rem 3rem 2.5rem;
+  text-align: center;
   animation: modalIn var(--transition-medium) 0.05s both;
 }
 
@@ -86,30 +87,16 @@
   transform: rotate(90deg);
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 1.25rem;
-}
-
-.eyebrow {
-  display: block;
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 1rem;
-  color: rgba(0, 0, 0, 0.45);
-  letter-spacing: 0.03em;
-  margin-bottom: 0.35rem;
-}
-
 .title {
   font-family: var(--font-serif);
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #000000;
   position: relative;
   display: inline-block;
-  padding-bottom: 0.65rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .title::after {
@@ -123,125 +110,21 @@
   background: rgba(0, 0, 0, 0.25);
 }
 
-.intro {
+.body {
   font-family: var(--font-sans);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.7;
   color: rgba(0, 0, 0, 0.75);
-  text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
-.datesSection {
-  margin-bottom: 1.5rem;
-}
-
-.datesLabel {
-  display: block;
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.45);
-  text-align: center;
-  margin-bottom: 0.75rem;
-}
-
-.datesGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
-}
-
-.dateChip {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.1rem;
-  padding: 0.5rem 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: all var(--transition-fast);
-}
-
-.dateChip:hover {
-  border-color: rgba(0, 0, 0, 0.35);
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.dateDay {
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.45);
-}
-
-.dateNum {
-  font-family: var(--font-serif);
-  font-size: 1.15rem;
-  color: #000000;
-}
-
-.notes {
-  background: #000000;
-  padding: 1.15rem 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.notesLabel {
-  display: block;
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 0.6rem;
-}
-
-.noteLine {
-  font-family: var(--font-sans);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.noteLine + .noteLine {
-  margin-top: 0.6rem;
-}
-
-.outro {
+.signature {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.1rem;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 1.25rem;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.phoneLink {
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  color: rgba(0, 0, 0, 0.55);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-  text-decoration-color: rgba(0, 0, 0, 0.25);
-  transition: color var(--transition-fast);
-}
-
-.phoneLink:hover {
-  color: #000000;
-  text-decoration-color: #000000;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.02em;
+  margin-bottom: 2.25rem;
 }
 
 .closeButton {
@@ -250,6 +133,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   border-radius: 50%;
   background: transparent;
   color: #000000;
@@ -267,31 +151,14 @@
 
 @media (max-width: 640px) {
   .modal {
-    padding: 3rem 1.5rem 2.25rem;
+    padding: 3rem 1.75rem 2.25rem;
   }
 
   .title {
     font-size: 1.75rem;
   }
 
-  .datesGrid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.4rem;
-  }
-
-  .dateChip {
-    padding: 0.55rem 0.15rem;
-  }
-
-  .dateDay {
-    font-size: 0.62rem;
-  }
-
-  .dateNum {
-    font-size: 1rem;
-  }
-
-  .notes {
-    padding: 1.25rem 1.25rem;
+  .body {
+    font-size: 0.95rem;
   }
 }
