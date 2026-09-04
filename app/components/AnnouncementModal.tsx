@@ -7,22 +7,22 @@ interface AnnouncementModalProps {
   language: 'nl' | 'en'
 }
 
-const EXPIRES_AT = new Date('2026-08-31T23:59:59')
-
 const text = {
   nl: {
-    title: 'En vacances !',
-    body: 'Wij zijn er even tussenuit en zien jullie graag weer in september.',
+    eyebrow: 'nouveauté',
+    title: 'Nieuwe herfstkaart',
+    body: 'Met de herfst in aantocht serveren we een vernieuwde kaart vol seizoensgerechten — denk aan Franse uiensoep, boeuf bourguignon en canard à l\'orange.',
     signature: 'Team Auwt Aelse',
     dismiss: 'Sluiten',
-    close: 'Begrepen',
+    cta: 'Bekijk de kaart',
   },
   en: {
-    title: 'En vacances !',
-    body: "We're away for a little while and can't wait to welcome you back in September.",
+    eyebrow: 'nouveauté',
+    title: 'New autumn menu',
+    body: "As autumn arrives, we're serving a refreshed menu full of seasonal dishes — think French onion soup, boeuf bourguignon and canard à l'orange.",
     signature: 'Team Auwt Aelse',
     dismiss: 'Close',
-    close: 'Got it',
+    cta: 'View the menu',
   },
 }
 
@@ -31,8 +31,6 @@ export default function AnnouncementModal({ language }: AnnouncementModalProps) 
   const [isClosing, setIsClosing] = useState(false)
 
   useEffect(() => {
-    if (new Date() > EXPIRES_AT) return
-
     const timer = setTimeout(() => setIsOpen(true), 600)
     return () => clearTimeout(timer)
   }, [])
@@ -61,6 +59,18 @@ export default function AnnouncementModal({ language }: AnnouncementModalProps) 
     }, 350)
   }
 
+  const handleViewMenu = () => {
+    setIsClosing(true)
+    setTimeout(() => {
+      setIsOpen(false)
+      document.body.style.overflow = 'unset'
+      // force a synchronous reflow so the overflow change is applied
+      // before scrolling, or the browser ignores the scroll request
+      void document.body.offsetHeight
+      document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })
+    }, 350)
+  }
+
   if (!isOpen) return null
 
   const t = text[language]
@@ -84,14 +94,13 @@ export default function AnnouncementModal({ language }: AnnouncementModalProps) 
           </svg>
         </button>
 
+        <span className={styles.eyebrow}>{t.eyebrow}</span>
         <h2 id="announcement-title" className={styles.title}>{t.title}</h2>
         <p className={styles.body}>{t.body}</p>
         <p className={styles.signature}>{t.signature}</p>
 
-        <button className={styles.closeButton} onClick={handleClose} aria-label={t.close}>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="20 6 9 17 4 12" />
-          </svg>
+        <button className={styles.ctaButton} onClick={handleViewMenu}>
+          {t.cta}
         </button>
       </div>
     </div>

@@ -87,6 +87,16 @@
   transform: rotate(90deg);
 }
 
+.eyebrow {
+  display: block;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+}
+
 .title {
   font-family: var(--font-serif);
   font-size: 2.1rem;
@@ -127,24 +137,22 @@
   margin-bottom: 2.25rem;
 }
 
-.closeButton {
-  width: 52px;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  border-radius: 50%;
-  background: transparent;
-  color: #000000;
-  border: 1.5px solid rgba(0, 0, 0, 0.25);
+.ctaButton {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.9rem 2.5rem;
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
   transition: all var(--transition-fast) 0.05s;
 }
 
-.closeButton:hover {
-  background: #000000;
-  color: #ffffff;
-  border-color: #000000;
+.ctaButton:hover {
+  background: transparent;
+  color: #000000;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
